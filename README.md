@@ -1,2 +1,2 @@
-# leetcode-solution-automated
+# leetcode solutions - Python
 Collection of LeetCode questions to ace the coding interview!
