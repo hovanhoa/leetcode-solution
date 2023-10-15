@@ -5,14 +5,9 @@ class Solution(object):
         :type t: str
         :rtype: bool
         """
-        if not s:
-            return True
-
-        indx = 0
-        for i in t:
-            if i == s[indx]:
-                indx += 1
-            if indx == len(s):
-                return True
-        return False
-        
+        i = j = 0
+        while i < len(s) and j < len(t):
+            if s[i] == t[j]:
+                i += 1
+            j += 1
+        return i == len(s)
