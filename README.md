@@ -1,2 +1,1 @@
-# leetcode solutions - Python
-Collection of LeetCode questions to ace the coding interview!
+# ✨ Leetcode Solutions - Python Language
