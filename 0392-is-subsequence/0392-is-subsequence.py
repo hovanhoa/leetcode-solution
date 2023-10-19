@@ -1,13 +1,17 @@
-class Solution(object):
-    def isSubsequence(self, s, t):
-        """
-        :type s: str
-        :type t: str
-        :rtype: bool
-        """
-        i = j = 0
-        while i < len(s) and j < len(t):
-            if s[i] == t[j]:
+class Solution:
+    def isSubsequence(self, s: str, t: str) -> bool:
+        if not s:
+            return True
+
+        i = 0
+        j = 0
+
+        while j < len(t):
+            if t[j] == s[i]:
                 i += 1
             j += 1
-        return i == len(s)
+
+            if i == len(s):
+                return True
+        
+        return False
