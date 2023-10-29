@@ -1,13 +1,10 @@
-class Solution(object):
-    def twoSum(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: List[int]
-        """
-        index_map = dict()
-        for index, value in enumerate(nums):
-            if target - value in index_map:
-                return [index_map[target - value], index]
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        indexMap = {}
+        for i in range(len(nums)):
+            if (target - nums[i]) not in indexMap:
+                indexMap[nums[i]] = i
             else:
-                index_map[value] = index
+                return [indexMap[target - nums[i]], i]
+        
+        return [-1, -1]
