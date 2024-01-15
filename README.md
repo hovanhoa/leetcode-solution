@@ -1,1 +1,1 @@
-# ✨ Leetcode Solutions - Python Language
+# ✨ Leetcode Solutions
