@@ -1,14 +1,16 @@
-class Solution:
-    def increasingTriplet(self, nums: List[int]) -> bool:
-        first = float("inf")
-        second = float("inf")
-
-        for i in nums:
-            if i <= first:
-                first = i
-            elif i <= second:
-                second = i
+class Solution(object):
+    def increasingTriplet(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: bool
+        """
+        first = second = float('inf')
+        for n in nums:
+            if n <= first:
+                first = n
+            elif n <= second:
+                second = n
             else:
                 return True
-            
+
         return False
