@@ -1,19 +1,25 @@
-class Solution:
-    def compress(self, chars: List[str]) -> int:
-        result, cnt = 0, 1
-        j = 0
-        for i in range(1, len(chars)+1): 
-            if i < len(chars) and chars[i] == chars[i-1]:
-                cnt += 1
-            else:
-                chars[j] = chars[i-1]
-                j += 1
+class Solution(object):
+    def compress(self, chars):
+        """
+        :type chars: List[str]
+        :rtype: int
+        """
+        walker, runner = 0, 0
+        while runner < len(chars):
+            chars[walker] = chars[runner]
+            count = 1
 
-                if cnt == 1:
-                    continue
-                for ch in str(cnt):
-                    chars[j] = ch
-                    j += 1
+            while runner + 1 < len(chars) and chars[runner] == chars[runner+1]:
+                runner += 1
+                count += 1
+            
+            if count > 1:
+                for c in str(count):
+                    chars[walker+1] = c
+                    walker += 1
+                
+            runner += 1
+            walker += 1
 
-                cnt = 1
-        return j  
+        return walker
+        
