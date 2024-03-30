@@ -7,17 +7,7 @@ class Solution(object):
         """
         if len(word1) != len(word2):
             return False
-
-        map1 = collections.Counter(word1)
-        map2 = collections.Counter(word2)
-
-        if set(map1.keys()) != set(map2.keys()):
-            return False
-
-        a = list(map1.values())
-        b = list(map2.values())
-        a.sort()
-        b.sort()
-
-        return a == b
         
+        l = [word1.count(i) for i in set(word1)]
+        m = [word2.count(i) for i in set(word2)]
+        return set(word1) == set(word2) and sorted(l) == sorted(m)
