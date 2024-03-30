@@ -8,12 +8,8 @@ class Solution(object):
         if len(word1) != len(word2):
             return False
 
-        map1={}
-        map2={}
-        for i in word1:
-            map1[i]=map1.get(i,0)+1
-        for i in word2:
-            map2[i]=map2.get(i,0)+1
+        map1 = collections.Counter(word1)
+        map2 = collections.Counter(word2)
 
         if set(map1.keys()) != set(map2.keys()):
             return False
