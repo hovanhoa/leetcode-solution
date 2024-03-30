@@ -6,21 +6,11 @@ class Solution(object):
         :rtype: int
         """
         vowels = "aeiou"
-        maxLen = 0
-        curLen = 0
+        cnt = ans = sum(s[i] in vowels for i in range(k))
 
-        for i in range(len(s)):
-            if i < k and s[i] in vowels:
-                curLen += 1
-            
-            if i >= k:
-                if s[i-k] in vowels:
-                    curLen -= 1
-                
-                if s[i] in vowels:
-                    curLen += 1
+        for i in range(k, len(s)):
+            cnt += (s[i] in vowels) - (s[i - k] in vowels)
+            ans = max(ans, cnt)
 
-            maxLen = max(maxLen, curLen)
-
-        return maxLen
+        return ans
                 
