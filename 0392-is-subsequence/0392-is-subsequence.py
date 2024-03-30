@@ -5,10 +5,12 @@ class Solution(object):
         :type t: str
         :rtype: bool
         """
-        i = j = 0
-        while i < len(s) and j < len(t):
-            if s[i] == t[j]:
-                i += 1
-            j += 1
+        if s == "":
+            return True
         
-        return i == len(s)
+        indx = 0
+        for c in t:
+            if indx < len(s) and s[indx] == c:
+                indx += 1
+        
+        return indx == len(s)
