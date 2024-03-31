@@ -11,15 +11,14 @@ class Solution(object):
         """
         if not head:
             return None
-        
+
         iterNode = head
         head = head.next
         iterNode.next = None
-
         while head:
             temp = head
             head = head.next
             temp.next = iterNode
             iterNode = temp
-
+        
         return iterNode
