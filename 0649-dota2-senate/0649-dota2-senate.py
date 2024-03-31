@@ -1,20 +1,20 @@
 class Solution:
     def predictPartyVictory(self, senate: str) -> str:
-        radiantQueue = collections.deque()
-        direQueue = collections.deque()
+        radiant = collections.deque()
+        dire = collections.deque()
 
         for i in range(len(senate)):
             if senate[i] == "R":
-                radiantQueue.append(i)
+                radiant.append(i)
             else:
-                direQueue.append(i)
+                dire.append(i)
         
-        while radiantQueue and direQueue:
-            radiant, dire = radiantQueue.popleft(), direQueue.popleft()
+        while radiant and dire:
+            first, second = radiant.popleft(), dire.popleft()
 
-            if radiant < dire:
-                radiantQueue.append(radiant + len(senate))
+            if first < second:
+                radiant.append(first + len(senate))
             else:
-                direQueue.append(dire + len(senate))
-        
-        return "Radiant" if radiantQueue else "Dire"
+                dire.append(second + len(senate))
+
+        return "Radiant" if radiant else "Dire"
