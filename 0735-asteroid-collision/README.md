@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/asteroid-collision/?envType=study-plan-v2&envId=leetcode-75">735. Asteroid Collision</a></h2><h3>Medium</h3><hr><p>We are given an array <code>asteroids</code> of integers representing asteroids in a row.</p>
+<h2><a href="https://leetcode.com/problems/asteroid-collision">735. Asteroid Collision</a></h2><h3>Medium</h3><hr><p>We are given an array <code>asteroids</code> of integers representing asteroids in a row.</p>
 
 <p>For each asteroid, the absolute value represents its size, and the sign represents its direction (positive meaning right, negative meaning left). Each asteroid moves at the same speed.</p>
 
