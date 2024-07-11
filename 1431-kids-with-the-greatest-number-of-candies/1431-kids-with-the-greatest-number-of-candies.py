@@ -5,12 +5,4 @@ class Solution(object):
         :type extraCandies: int
         :rtype: List[bool]
         """
-        greatestCandy = max(candies)
-        res = []
-        for candy in candies:
-            if candy + extraCandies >= greatestCandy:
-                res.append(True)
-            else:
-                res.append(False)
-        
-        return res
+        return [candy + extraCandies >= max(candies) for candy in candies]
