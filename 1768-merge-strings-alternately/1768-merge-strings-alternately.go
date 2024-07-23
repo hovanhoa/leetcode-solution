@@ -1,21 +1,15 @@
 func mergeAlternately(word1 string, word2 string) string {
-    len1 := len(word1)
-    len2 := len(word2)
-    var result string
-    maxLen := len1 
-    if len2 > len1 {
-        maxLen = len2
-    }
-
-    for i := 0; i < maxLen; i ++ {
-        if i < len1 {
-            result += string(word1[i])
+    i, j := 0, 0
+    res := ""
+    for ;i < len(word1) || j < len(word2); i, j = i+1, j+1 {
+        if i < len(word1) {
+            res += string(word1[i])
         }
 
-        if i < len2 {
-            result += string(word2[i])
+        if j < len(word2) {
+            res += string(word2[j])
         }
     }
 
-    return result
+    return res
 }
