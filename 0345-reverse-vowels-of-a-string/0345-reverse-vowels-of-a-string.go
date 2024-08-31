@@ -1,6 +1,5 @@
 func reverseVowels(s string) string {
-    out := []rune(s)
-    vowels := map[rune]bool{
+    vowelsMap := map[byte]bool{
         'a': true,
         'e': true,
         'i': true,
@@ -12,23 +11,22 @@ func reverseVowels(s string) string {
         'O': true,
         'U': true,
     }
+
+    result := []byte(s)
     left, right := 0, len(s) - 1
-
     for left < right {
-        for left < right && !vowels[out[left]] {
+        for left < right && !vowelsMap[result[left]]{
             left += 1
         }
 
-        for left < right && !vowels[out[right]] {
+        for left < right && !vowelsMap[result[right]] {
             right -= 1
         }
 
-        if left < right {
-            out[left], out[right] = out[right], out[left]
-            left += 1
-            right -= 1
-        }
-    } 
+        result[left], result[right] = result[right], result[left]
+        left += 1
+        right -= 1
+    }   
 
-    return string(out)
+    return string(result)
 }
