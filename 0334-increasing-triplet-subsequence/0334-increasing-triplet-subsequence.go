@@ -1,9 +1,5 @@
 func increasingTriplet(nums []int) bool {
-    const MaxUint = ^uint(0) 
-    const MaxInt = int(MaxUint >> 1) 
-
-    first, second := MaxInt, MaxInt
-    fmt.Println(first, second)
+    first, second := math.MaxInt32, math.MaxInt32
     for _, v := range nums {
         if v <= first {
             first = v
