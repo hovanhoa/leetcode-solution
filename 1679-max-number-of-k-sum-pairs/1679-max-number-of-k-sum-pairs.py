@@ -5,15 +5,20 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-        numsMap = {}
+        nums.sort()
+        left = 0
+        right = len(nums) - 1
         ans = 0
-        for i in nums:
-            if k - i in numsMap and numsMap[k - i] > 0:
-                ans += 1
-                numsMap[k - i] -= 1
-            elif i not in numsMap:
-                numsMap[i] = 1
-            else:
-                numsMap[i] += 1
 
+        while left < right:
+            cur = nums[left] + nums[right]
+            if cur == k:
+                ans += 1
+                left += 1
+                right -= 1
+            elif cur < k:
+                left += 1
+            else: 
+                right -= 1
+        
         return ans
