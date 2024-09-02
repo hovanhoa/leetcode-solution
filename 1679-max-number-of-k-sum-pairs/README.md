@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/max-number-of-k-sum-pairs/?envType=study-plan-v2&envId=leetcode-75">1679. Max Number of K-Sum Pairs</a></h2><h3>Medium</h3><hr><p>You are given an integer array <code>nums</code> and an integer <code>k</code>.</p>
+<h2><a href="https://leetcode.com/problems/max-number-of-k-sum-pairs">1679. Max Number of K-Sum Pairs</a></h2><h3>Medium</h3><hr><p>You are given an integer array <code>nums</code> and an integer <code>k</code>.</p>
 
 <p>In one operation, you can pick two numbers from the array whose sum equals <code>k</code> and remove them from the array.</p>
 
