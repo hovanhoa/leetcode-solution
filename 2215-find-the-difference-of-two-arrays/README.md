@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/find-the-difference-of-two-arrays">2215. Find the Difference of Two Arrays</a></h2><h3>Easy</h3><hr><p>Given two <strong>0-indexed</strong> integer arrays <code>nums1</code> and <code>nums2</code>, return <em>a list</em> <code>answer</code> <em>of size</em> <code>2</code> <em>where:</em></p>
+<h2><a href="https://leetcode.com/problems/find-the-difference-of-two-arrays/?envType=study-plan-v2&envId=leetcode-75">2215. Find the Difference of Two Arrays</a></h2><h3>Easy</h3><hr><p>Given two <strong>0-indexed</strong> integer arrays <code>nums1</code> and <code>nums2</code>, return <em>a list</em> <code>answer</code> <em>of size</em> <code>2</code> <em>where:</em></p>
 
 <ul>
 	<li><code>answer[0]</code> <em>is a list of all <strong>distinct</strong> integers in</em> <code>nums1</code> <em>which are <strong>not</strong> present in</em> <code>nums2</code><em>.</em></li>
