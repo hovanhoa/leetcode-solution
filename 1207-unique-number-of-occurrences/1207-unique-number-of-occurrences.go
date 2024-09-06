@@ -1,16 +1,16 @@
 func uniqueOccurrences(arr []int) bool {
-    occurencesMap := make(map[int]int)
-    for _, v := range arr {
-        occurencesMap[v]++
+    occurrences := make(map[int]int)
+    for _, val := range arr {
+        occurrences[val]++
     }
 
-    uniqueMap := make(map[int]bool)
-    for _, v := range occurencesMap {
-        if !uniqueMap[v] {
-            uniqueMap[v] = true
-        } else {
+    exists := make(map[int]bool)
+    for _, count := range occurrences {
+        if exists[count] {
             return false
         }
+
+        exists[count] = true
     }
 
     return true
