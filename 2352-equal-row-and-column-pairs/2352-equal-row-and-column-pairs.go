@@ -1,22 +1,21 @@
 func equalPairs(grid [][]int) int {
     n := len(grid)
-    revertedGrid := make([][]int, n)
-    for i := range revertedGrid {
-        revertedGrid[i] = make([]int, n)
-    }
-
+    m := make(map[[200]int]int)
+    arr := [200]int{}
     for i := 0; i < n; i++ {
-        for j := 0; j < n; j++ {
-            revertedGrid[j][i] = grid[i][j]
-        }
+        copy(arr[:], grid[i])
+        m[arr]++
     }
 
     res := 0
     for i := 0; i < n; i++ {
+        arr := [200]int{}
         for j := 0; j < n; j++ {
-            if reflect.DeepEqual(grid[i], revertedGrid[j]) {
-                res++
-            }
+            arr[j] = grid[j][i]
+        }
+
+        if v, ok := m[arr]; ok {
+            res += v
         }
     }
 
