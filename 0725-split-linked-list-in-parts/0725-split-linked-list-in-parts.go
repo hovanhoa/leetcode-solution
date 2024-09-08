@@ -1,7 +1,7 @@
 func splitListToParts(head *ListNode, k int) []*ListNode {
     length := 0
     current := head
-    var parts []*ListNode
+    parts := make([]*ListNode, 0, k)
 
     for current != nil {
         length++
@@ -13,9 +13,8 @@ func splitListToParts(head *ListNode, k int) []*ListNode {
 
     for i := 0; i < k; i++ {
         partSize := baseSize
-        if extra > 0 {
+        if extra > i {
             partSize++
-            extra--
         }
 
         var partHead, partTail *ListNode
