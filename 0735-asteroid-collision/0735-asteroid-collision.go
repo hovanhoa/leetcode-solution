@@ -1,11 +1,3 @@
-func abs(a int) int {
-    if a < 0 {
-        return -a
-    }
-
-    return a
-}
-
 func asteroidCollision(asteroids []int) []int {
     var stack []int
     for i := 0; i < len(asteroids); i++ {
@@ -21,10 +13,9 @@ func asteroidCollision(asteroids []int) []int {
             continue
         }
 
-        absNext := abs(next)
-        if (last > absNext) {
+        if (last > -next) {
             continue
-        } else if (absNext > last) {
+        } else if (-next > last) {
             stack = stack[:len(stack)-1]
             i--
         } else {
