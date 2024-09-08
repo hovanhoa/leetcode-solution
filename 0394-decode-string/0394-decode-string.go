@@ -2,13 +2,14 @@ func decodeString(s string) string {
     nums, codes := []int{}, []string{}
     num, code := "", ""
     for _, c := range s {
-        if unicode.IsNumber(c) {
+        if unicode.IsDigit(c) {
             num += string(c)
         } else if unicode.IsLetter(c) {
             code += string(c)
         } else if c == '[' {
             n, _ := strconv.Atoi(num)
-            nums, codes = append(nums, n), append(codes, code)
+            nums = append(nums, n)
+            codes = append(codes, code)
             num, code = "", ""
         } else if c == ']' {
             n, c := nums[len(nums)-1], codes[len(codes)-1]
@@ -16,5 +17,6 @@ func decodeString(s string) string {
             nums, codes = nums[:len(nums)-1], codes[:len(codes)-1]
         }
     }
+
     return code
 }
