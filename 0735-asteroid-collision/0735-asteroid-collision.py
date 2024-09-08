@@ -4,16 +4,17 @@ class Solution(object):
         :type asteroids: List[int]
         :rtype: List[int]
         """
-        res = []
+        stack = []
+
         for a in asteroids:
-            while res and res[-1] > 0 > a:
-                if res[-1] < abs(a):
-                    res.pop()
-                    continue
-                elif res[-1] == abs(a):
-                    res.pop()
-                break
+            if a > 0:
+                stack.append(a)
             else:
-                res.append(a)
-        
-        return res
+                while stack and stack[-1] > 0 and stack[-1] < -a:
+                    stack.pop()
+                if not stack or stack[-1] < 0:
+                    stack.append(a)
+                elif stack and stack[-1] == -a:
+                    stack.pop()
+
+        return stack
