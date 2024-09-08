@@ -7,6 +7,7 @@ class Solution(object):
         stack = []
         curStr = ""
         curNum = 0
+
         for c in s:
             if c.isdigit():
                 curNum = curNum * 10 + int(c)
@@ -16,9 +17,9 @@ class Solution(object):
                 curNum = 0
             elif c == "]":
                 preStr, num = stack.pop()
-                curStr = preStr + num * curStr
+                curStr = preStr + curStr * num
             else:
                 curStr += c
-        
+            
         return curStr
         
