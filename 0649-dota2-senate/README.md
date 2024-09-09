@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/dota2-senate">649. Dota2 Senate</a></h2><h3>Medium</h3><hr><p>In the world of Dota2, there are two parties: the Radiant and the Dire.</p>
+<h2><a href="https://leetcode.com/problems/dota2-senate/?envType=study-plan-v2&envId=leetcode-75">649. Dota2 Senate</a></h2><h3>Medium</h3><hr><p>In the world of Dota2, there are two parties: the Radiant and the Dire.</p>
 
 <p>The Dota2 senate consists of senators coming from two parties. Now the Senate wants to decide on a change in the Dota2 game. The voting for this change is a round-based procedure. In each round, each senator can exercise <strong>one</strong> of the two rights:</p>
 
