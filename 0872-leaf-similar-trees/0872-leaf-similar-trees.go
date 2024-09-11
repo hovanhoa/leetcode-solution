@@ -24,17 +24,5 @@ func leafSimilar(root1 *TreeNode, root2 *TreeNode) bool {
     getLeaf(root1, &arr1)
     getLeaf(root2, &arr2)
 
-    fmt.Println(arr1, arr2)
-
-    if len(arr1) != len(arr2) {
-        return false
-    }
-
-    for i := 0; i < len(arr1); i++ {
-        if arr1[i] != arr2[i] {
-            return false
-        }
-    }
-
-    return true
+    return reflect.DeepEqual(arr1, arr2)
 }
