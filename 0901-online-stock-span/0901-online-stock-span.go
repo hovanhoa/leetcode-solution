@@ -9,15 +9,16 @@ func Constructor() StockSpanner {
 
 
 func (this *StockSpanner) Next(price int) int {
-    this.stack = append(this.stack, price)
-    ans := 0
-    for i := 0; i < len(this.stack); i++ {
+    ans := 1
+    for i := len(this.stack) - 1; i >= 0; i-- {
         if this.stack[i] > price {
-            ans = 0
-        } else {
-            ans++
+            break
         }
+
+        ans++
     }
+
+    this.stack = append(this.stack, price)
 
     return ans
 }
