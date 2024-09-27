@@ -9,5 +9,5 @@ func minCostClimbingStairs(cost []int) int {
         }
     }
 
-    return cost[len(cost)-1]
+    return cost[len(cost)-1] 
 }
