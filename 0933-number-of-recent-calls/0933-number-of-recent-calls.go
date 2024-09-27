@@ -1,5 +1,5 @@
 type RecentCounter struct {
-    requests []int
+    ping []int
 }
 
 
@@ -9,10 +9,22 @@ func Constructor() RecentCounter {
 
 
 func (this *RecentCounter) Ping(t int) int {
-    this.requests = append(this.requests, t)
-    for this.requests[0] < t-3000 {
-        this.requests = this.requests[1:]
+    ans := 1
+    for i := len(this.ping) - 1; i >= 0; i-- {
+        if this.ping[i] >= t - 3000 {
+            ans++
+        } else {
+            break
+        }
     }
-    
-    return len(this.requests)
+
+    this.ping = append(this.ping, t)
+    return ans
 }
+
+
+/**
+ * Your RecentCounter object will be instantiated and called as such:
+ * obj := Constructor();
+ * param_1 := obj.Ping(t);
+ */
