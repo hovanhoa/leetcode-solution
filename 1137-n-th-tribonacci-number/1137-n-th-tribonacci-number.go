@@ -1,22 +1,18 @@
 func tribonacci(n int) int {
-    if n == 0 || n == 1 {
-        return n
+    if n < 1 {
+        return 0
     }
 
-    if n == 2 {
-        return 1
-    }
-
-    t0 := 0
-    t1 := 1
-    t2 := 1
-    sum := 0
-    for i := 3; i <= n; i++ {
-        sum = t0 + t1 + t2
-        t0 = t1
-        t1 = t2
-        t2 = sum
+    if n < 3 {
+        return 1 
     }
     
-    return sum
+    dp := make([]int, n+1)
+    dp[1] = 1
+    dp[2] = 1
+    for i := 3; i < n+1; i++ {
+        dp[i] = dp[i-1] + dp[i-2] + dp[i-3]
+    }
+
+    return dp[n]
 }
