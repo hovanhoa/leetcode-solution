@@ -6,7 +6,7 @@
  *     Right *TreeNode
  * }
  */
-func getLeaf(root *TreeNode, arr *[]int) {
+func getLeafs(root *TreeNode, arr *[]int) {
     if root == nil {
         return
     }
@@ -15,14 +15,24 @@ func getLeaf(root *TreeNode, arr *[]int) {
         *arr = append(*arr, root.Val)
     }
 
-    getLeaf(root.Left, arr)
-    getLeaf(root.Right, arr)
+    getLeafs(root.Left, arr) 
+    getLeafs(root.Right, arr) 
 }
 
 func leafSimilar(root1 *TreeNode, root2 *TreeNode) bool {
-    arr1, arr2 := []int{}, []int{}
-    getLeaf(root1, &arr1)
-    getLeaf(root2, &arr2)
+    arr1, arr2 := make([]int, 0), make([]int, 0)
+    getLeafs(root1, &arr1)
+    getLeafs(root2, &arr2)
 
-    return reflect.DeepEqual(arr1, arr2)
+    if len(arr1) != len(arr2) {
+        return false
+    }
+
+    for i := 0; i < len(arr1); i++ {
+        if arr1[i] != arr2[i] {
+            return false
+        }
+    }
+
+    return true
 }
