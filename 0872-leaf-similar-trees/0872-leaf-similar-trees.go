@@ -21,8 +21,8 @@ func getLeafs(root *TreeNode, arr *[]int) {
 
 func leafSimilar(root1 *TreeNode, root2 *TreeNode) bool {
     arr1, arr2 := make([]int, 0), make([]int, 0)
-    getLeafs(root1, &arr1)
-    getLeafs(root2, &arr2)
+    getLeafs(root1, arr1)
+    getLeafs(root2, arr2)
 
     if len(arr1) != len(arr2) {
         return false
