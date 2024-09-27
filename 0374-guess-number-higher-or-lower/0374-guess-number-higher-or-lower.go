@@ -8,17 +8,17 @@
  */
 
 func guessNumber(n int) int {
-    left := 1
-    right := n
-
-    for {
-        num := (left + right)/2
-        if guess(num) == 0 {
-            return num
-        } else if guess(num) == 1 {
-            left = num + 1
+    l, r := 0, n
+    for l <= r {
+        pick := (l+r)/2
+        if guess(pick) == 0 {
+            return pick
+        } else if guess(pick) == 1 {
+            l = pick + 1
         } else {
-            right = num - 1
+            r = pick - 1
         }
     }
+
+    return -1
 }
