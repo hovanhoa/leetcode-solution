@@ -1,14 +1,18 @@
 func increasingTriplet(nums []int) bool {
-    first, second := math.MaxInt32, math.MaxInt32
+    if len(nums) < 3 {
+        return false
+    }
+
+    f, s := math.MaxInt, math.MaxInt
     for _, v := range nums {
-        if v <= first {
-            first = v
-        } else if v <= second {
-            second = v
+        if v <= f {
+            f = v
+        } else if v <= s {
+            s = v
         } else {
             return true
         }
     }
-    
+
     return false
 }
