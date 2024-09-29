@@ -1,37 +1,21 @@
 func compress(chars []byte) int {
-    j := 0
-    count := 0
-    char := chars[0]
-    for i := 0; i < len(chars); i++ {
-        if char == chars[i] {
-            count++
-        } else {
-            chars[j] = char
-            j++
+    l, r := 0, 0
+    for r < len(chars) {
+        j := r + 1
+        for ;j < len(chars) && chars[j] == chars[j-1]; j++ {}
 
-            if count > 1 {
-                bCount := []byte(strconv.Itoa(count))
-                for _, v := range bCount {
-                    chars[j] = v
-                    j++
-                }
+        chars[l] = chars[r]
+        l++
+        if j != r + 1 {
+            for _, v := range strconv.Itoa(j-r) {
+                chars[l] = byte(v)
+                l++
             }
+        } 
 
-            count = 1
-            char = chars[i]
-        }
+        r = j
     }
 
-    chars[j] = char
-    j++
-
-    if count > 1 {
-        bCount := []byte(strconv.Itoa(count))
-        for _, v := range bCount {
-            chars[j] = v
-            j++
-        }
-    }
-
-    return j
+    chars = chars[:l]
+    return len(chars)
 }
