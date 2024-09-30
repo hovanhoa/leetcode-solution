@@ -1,26 +1,34 @@
 func maxVowels(s string, k int) int {
-    res, num := 0, 0
-    vowelMap := map[byte]bool{
+    vowels := map[byte]bool {
         'a': true,
-        'e': true,
+        'e': true, 
         'i': true,
         'o': true,
         'u': true,
     }
 
-    for i := 0; i < len(s); i++ {
-        if i >= k && vowelMap[s[i-k]] {
-            num--
-        }
-
-        if vowelMap[s[i]] {
-            num++
-        }
-
-        if num > res {
-            res = num
+    ans := 0
+    sByte := []byte(s)
+    for i := 0; i < k; i++ {
+        if vowels[sByte[i]] {
+            ans++
         }
     }
 
-    return res
+    cur := ans
+    for i := k; i < len(sByte); i++ {
+        if vowels[sByte[i]] {
+            cur++
+        }
+
+        if vowels[sByte[i-k]] {
+            cur--
+        }
+
+        if cur > ans {
+            ans = cur
+        }
+    }
+
+    return ans
 }
