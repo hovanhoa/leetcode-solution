@@ -1,27 +1,22 @@
 func asteroidCollision(asteroids []int) []int {
-    var stack []int
+    ans := make([]int, 0)
     for i := 0; i < len(asteroids); i++ {
-        next := asteroids[i]
-        if len(stack) == 0 {
-            stack = append(stack, next)
-            continue
-        }
-
-        last := stack[len(stack)-1]
-        if last < 0 || next > 0 {
-            stack = append(stack, next)
-            continue
-        }
-
-        if (last > -next) {
-            continue
-        } else if (-next > last) {
-            stack = stack[:len(stack)-1]
-            i--
+        if asteroids[i] > 0 {
+            ans = append(ans, asteroids[i])
         } else {
-            stack = stack[:len(stack)-1]
+            if len(ans) == 0 {
+                ans = append(ans, asteroids[i])
+                continue
+            }
+
+            if ans[len(ans)-1] == -asteroids[i] {
+                ans = ans[:len(ans)-1]
+            } else if ans[len(ans)-1] < -asteroids[i] {
+                ans = ans[:len(ans)-1]
+                i--
+            }
         }
     }
 
-    return stack
+    return ans
 }
