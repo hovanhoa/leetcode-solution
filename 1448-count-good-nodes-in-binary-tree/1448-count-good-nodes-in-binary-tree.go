@@ -6,20 +6,18 @@
  *     Right *TreeNode
  * }
  */
-func godNodes(root *TreeNode, max int) int {
+func goodNodesWithVal(root *TreeNode, val int) int {
     if root == nil {
         return 0
     }
 
-    count := 0
-    if root.Val >= max {
-        count = 1
-        max = root.Val
+    if root.Val >= val {
+        return 1 + goodNodesWithVal(root.Left, root.Val) + goodNodesWithVal(root.Right, root.Val)
     }
 
-    return count + godNodes(root.Left, max) + godNodes(root.Right, max)
+    return goodNodesWithVal(root.Left, val) + goodNodesWithVal(root.Right, val)
 }
 
 func goodNodes(root *TreeNode) int {
-    return godNodes(root, root.Val)
+    return goodNodesWithVal(root, root.Val)
 }
