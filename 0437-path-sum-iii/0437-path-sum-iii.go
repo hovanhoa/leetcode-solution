@@ -7,17 +7,17 @@
  * }
  */
 
-func dfs(root *TreeNode, targetSum int) int {
+func dfs(root *TreeNode, targetSum int, total int) int {
     if root == nil {
         return 0
     }
 
-    count := 0
-    if targetSum == root.Val {
-        count = 1
+    total += root.Val
+    if total == targetSum {
+        return 1 + dfs(root.Left, targetSum, total) + dfs(root.Right, targetSum, total) 
     }
 
-    return count + dfs(root.Left, targetSum - root.Val) + dfs(root.Right, targetSum - root.Val)
+    return dfs(root.Left, targetSum, total) + dfs(root.Right, targetSum, total) 
 }
 
 func pathSum(root *TreeNode, targetSum int) int {
@@ -25,5 +25,5 @@ func pathSum(root *TreeNode, targetSum int) int {
         return 0
     }
 
-    return dfs(root, targetSum) + pathSum(root.Left, targetSum) + pathSum(root.Right, targetSum)
+    return dfs(root, targetSum, 0) + pathSum(root.Left, targetSum) + pathSum(root.Right, targetSum)
 }
