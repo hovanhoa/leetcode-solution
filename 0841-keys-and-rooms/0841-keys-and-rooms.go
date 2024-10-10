@@ -1,21 +1,18 @@
-func dfs(seen []bool, rooms[][]int, node int) {
-    seen[node] = true
-    for _, v := range rooms[node] {
-        if !seen[v] {
-            dfs(seen, rooms, v)
-        }
-    }
-}
-
 func canVisitAllRooms(rooms [][]int) bool {
-    seen := make([]bool, len(rooms))
-    dfs(seen, rooms, 0)
+    visited := make(map[int]bool)
+    keys := []int{0}
+    for len(keys) > 0 {
+        newKeys := []int{}
+        for _, k := range keys {
+            if !visited[k] {
+                newKeys = append(newKeys, rooms[k]...)
+            }
 
-    for _, v := range seen {
-        if !v {
-            return false
+            visited[k] = true
         }
+
+        keys = newKeys
     }
 
-    return true
+    return len(visited) == len(rooms)
 }
