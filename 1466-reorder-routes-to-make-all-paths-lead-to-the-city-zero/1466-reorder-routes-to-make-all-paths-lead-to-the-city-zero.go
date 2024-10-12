@@ -1,18 +1,41 @@
 func minReorder(n int, connections [][]int) int {
-    sort.Slice(connections, func(i, j int) bool {
-        return connections[i][1] < connections[j][1]
-    })
+    graph := make([][]int, n)
+    for i := 0; i < len(connections); i++ {
+        f, s := connections[i][0], connections[i][1]
+        graph[f] = append(graph[f], s)
+        graph[s] = append(graph[s], -f)
+    }
 
-    ans := 0
-    visited := map[int]bool{0: true}
-    for i := range connections {
-        if !visited[connections[i][1]] {
-            visited[connections[i][1]] = true
-            ans += 1
-        } else {
-            visited[connections[i][0]] = true
+    fmt.Println(graph)
+
+    visited := make([]bool, n)
+    res := 0
+    var dfs func(n int) 
+    dfs = func(num int) {
+        visited[num] = true
+        for i := 0; i < len(graph[num]); i++ {
+            if !visited[abs(graph[num][i])] {
+                dfs(abs(graph[num][i]))
+                if graph[num][i] > 0 {
+                    res++
+                }
+            }
         }
     }
 
-    return ans
+    for i := 0; i < len(graph); i++ {
+        if !visited[i] {
+            dfs(i)
+        }
+    }
+
+    return res
+}
+
+func abs(n int) int {
+    if n >= 0 {
+        return n
+    }
+
+    return -n
 }
