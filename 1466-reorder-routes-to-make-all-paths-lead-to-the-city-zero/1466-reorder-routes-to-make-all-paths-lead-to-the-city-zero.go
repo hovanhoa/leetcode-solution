@@ -1,41 +1,38 @@
 func minReorder(n int, connections [][]int) int {
-    graph := make([][]int, n)
-    for i := 0; i < len(connections); i++ {
+    arr := make([][]int, n)
+    for i := range connections {
         f, s := connections[i][0], connections[i][1]
-        graph[f] = append(graph[f], s)
-        graph[s] = append(graph[s], -f)
+        arr[f] = append(arr[f], s)
+        arr[s] = append(arr[s], -f)
     }
 
-    fmt.Println(graph)
 
+    ans := 0
     visited := make([]bool, n)
-    res := 0
-    var dfs func(n int) 
+    var dfs func(num int)
     dfs = func(num int) {
         visited[num] = true
-        for i := 0; i < len(graph[num]); i++ {
-            if !visited[abs(graph[num][i])] {
-                dfs(abs(graph[num][i]))
-                if graph[num][i] > 0 {
-                    res++
+        for i := range arr[num] {
+            if !visited[abs(arr[num][i])] {
+                dfs(abs(arr[num][i]))
+                if arr[num][i] > 0 {
+                    ans += 1
                 }
             }
         }
     }
 
-    for i := 0; i < len(graph); i++ {
-        if !visited[i] {
-            dfs(i)
-        }
+    for i := range arr {
+        dfs(i)
     }
 
-    return res
+    return ans
 }
 
-func abs(n int) int {
-    if n >= 0 {
-        return n
+func abs(a int) int {
+    if a < 0 {
+        return -a
     }
 
-    return -n
+    return a
 }
