@@ -1,7 +1,8 @@
 func countBits(n int) []int {
-	ones := make([]int, n+1)
-	for x := 0; x <= n; x++ {
-        ones[x] = ones[x>>1] + x&1
-	}
-	return ones
+    ans := make([]int, n+1)
+    for i := 0; i <= n; i++ {
+        ans[i] = ans[i>>1] + i&1
+    }
+
+    return ans
 }
