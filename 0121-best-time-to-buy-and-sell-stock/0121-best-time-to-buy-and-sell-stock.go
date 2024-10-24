@@ -1,10 +1,11 @@
 func maxProfit(prices []int) int {
     ans := 0
-    for i := range prices {
-        for j := i + 1; j < len(prices); j++ {
-            if prices[j] - prices[i] > ans {
-                ans = prices[j] - prices[i]
-            }
+    curMin := prices[0]
+    for _, v := range prices {
+        if v < curMin {
+            curMin = v
+        } else if v - curMin > ans {
+            ans = v - curMin
         }
     }
 
