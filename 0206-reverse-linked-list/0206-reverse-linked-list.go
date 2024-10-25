@@ -6,21 +6,15 @@
  * }
  */
 func reverseList(head *ListNode) *ListNode {
-    if head == nil {
-        return head
+    var prev *ListNode
+    cur := head
+
+    for cur != nil {
+        nxt := cur.Next
+        cur.Next = prev
+        prev = cur
+        cur = nxt
     }
 
-    cur, tail := head, head.Next
-    for tail != nil {
-        cur = tail
-        tail = tail.Next
-        cur.Next = head
-        if head.Next == cur {
-            head.Next = nil
-        }
-
-        head = cur
-    }
-
-    return cur
+    return prev
 }
