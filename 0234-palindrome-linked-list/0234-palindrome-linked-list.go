@@ -6,11 +6,12 @@
  * }
  */
 func isPalindrome(head *ListNode) bool {
-    fast, slow := head, head
+    slow, fast := head, head
     for fast != nil && fast.Next != nil {
         fast = fast.Next.Next
         slow = slow.Next
     }
+    
 
     var prev *ListNode
     for slow != nil {
@@ -22,7 +23,6 @@ func isPalindrome(head *ListNode) bool {
 
     l, r := head, prev
     for r != nil {
-        fmt.Println(l.Val, r.Val)
         if l.Val != r.Val {
             return false
         }
