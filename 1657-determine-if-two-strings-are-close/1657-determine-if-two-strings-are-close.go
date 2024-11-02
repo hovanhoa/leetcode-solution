@@ -3,36 +3,30 @@ func closeStrings(word1 string, word2 string) bool {
         return false
     }
 
-    w1Map := make(map[byte]int)
-    w2Map := make(map[byte]int)
-
-    for i := range word1 {
-        w1Map[word1[i]]++
-        w2Map[word2[i]]++
+    mWord1, mWord2 := map[byte]int{}, map[byte]int{}
+    for i := 0; i < len(word1); i++ {
+        mWord1[word1[i]]++
+        mWord2[word2[i]]++
     }
 
-    valueW2Map := make(map[int]int)
-    for _, v := range w2Map {
-        valueW2Map[v]++
+    // compare value
+    vWord1 := map[int]int{}
+    kWord1 := map[byte]bool{}
+    for k, v := range mWord1 {
+        vWord1[v]++
+        kWord1[k] = true
     }
 
-    for _, v := range w1Map {
-        if valueW2Map[v] == 0 {
+    for k, v := range mWord2 {
+        if vWord1[v] == 0 {
             return false
         }
 
-        valueW2Map[v]--
-    }
-
-    keyW2Map := make(map[byte]bool)
-    for k := range w2Map {
-        keyW2Map[k] = true
-    }
-
-    for k := range w1Map {
-        if !keyW2Map[k] {
+        if !kWord1[k] {
             return false
         }
+
+        vWord1[v]--
     }
 
     return true
