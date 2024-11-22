@@ -5,14 +5,11 @@ func permute(nums []int) [][]int {
     }
 
     for i := 0; i < len(nums); i++ {
-        n := nums[i]
-        perms := permute(append(append([]int{}, nums[:i]...), nums[i+1:]...))
-
+        newNums := append(append([]int{}, nums[:i]...), nums[i+1:]...)
+        perms := permute(newNums)
         for j := range perms {
-            perms[j] = append(perms[j], n)
+            ans = append(ans, append(perms[j], nums[i]))
         }
-
-        ans = append(ans, perms...)
     }
 
     return ans
