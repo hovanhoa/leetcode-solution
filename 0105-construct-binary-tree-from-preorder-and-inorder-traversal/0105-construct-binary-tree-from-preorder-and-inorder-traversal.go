@@ -14,6 +14,6 @@ func buildTree(preorder []int, inorder []int) *TreeNode {
     root := &TreeNode{Val: preorder[0]}
     i := slices.Index(inorder, preorder[0])
     root.Left = buildTree(preorder[1:1+i], inorder[:i])
-    root.Right = buildTree(preorder[1+i:], inorder[i+1:])
+    root.Right = buildTree(preorder[i+1:], inorder[i+1:])
     return root
 }
