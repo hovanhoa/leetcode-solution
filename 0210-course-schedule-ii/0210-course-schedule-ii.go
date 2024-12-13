@@ -6,6 +6,7 @@ func findOrder(numCourses int, prerequisites [][]int) []int {
 
     visit, cycle := map[int]bool{}, map[int]bool{}
     ans := []int{}
+    
     var dfs func(cur int) bool
     dfs = func(cur int) bool {
         if cycle[cur] {
@@ -22,10 +23,10 @@ func findOrder(numCourses int, prerequisites [][]int) []int {
                 return false
             }
         }
-
         cycle[cur] = false
         visit[cur] = true
         ans = append(ans, cur)
+
         return true
     }
 
