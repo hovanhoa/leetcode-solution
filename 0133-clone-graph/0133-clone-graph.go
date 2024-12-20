@@ -24,6 +24,6 @@ func dfs(node *Node, visited map[*Node]*Node) *Node {
 }
 
 func cloneGraph(node *Node) *Node {
-    visited := make(map[*Node]*Node)
+    visited := map[*Node]*Node{}
     return dfs(node, visited)
 }
