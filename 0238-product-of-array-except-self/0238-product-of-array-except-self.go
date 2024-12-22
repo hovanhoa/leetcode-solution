@@ -1,25 +1,31 @@
 func productExceptSelf(nums []int) []int {
-    left, right := make([]int, len(nums)), make([]int, len(nums))
-    for i := 0; i < len(nums); i++ {
-        if i == 0 {
-            left[i] = 1
+    countZero := 0
+    product := 1
+    for _, v := range nums {
+        if v == 0 {
+            countZero += 1
         } else {
-            left[i] = left[i-1] * nums[i-1]
+            product *= v
         }
     }
 
-    for i := len(nums) - 1; i >= 0; i-- {
-        if i == len(nums) - 1 {
-            right[i] = 1
-        } else {
-            right[i] = right[i+1] * nums[i+1]
+    if countZero > 1 {
+        return make([]int, len(nums))
+    } else if countZero == 1 {
+        for i := range nums {
+            if nums[i] != 0 {
+                nums[i] = 0
+            } else {
+                nums[i] = product
+            }
         }
+
+        return nums
     }
 
-    ans := make([]int, len(nums))
-    for i := range ans {
-        ans[i] = left[i] * right[i] 
+    for i := range nums {
+        nums[i] = product / nums[i]
     }
 
-    return ans
+    return nums
 }
