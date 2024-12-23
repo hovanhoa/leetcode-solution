@@ -12,7 +12,7 @@ func productExceptSelf(nums []int) []int {
 
     postfix := 1
     for i := len(nums) - 1; i >= 0; i-- {
-        ans[i] *= postfix 
+        ans[i] *= postfix
         postfix *= nums[i]
     }
 
