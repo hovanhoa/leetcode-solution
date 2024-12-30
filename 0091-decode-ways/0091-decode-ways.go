@@ -3,7 +3,7 @@ func numDecodings(s string) int {
         return 0
     }
 
-    size := len(s)
+    size := len(s) 
     dp := make([]int, size + 1)
     dp[0], dp[1] = 1, 1
 
