@@ -1,6 +1,6 @@
 func isRobotBounded(instructions string) bool {
-    dirX, dirY := 0, 1
     x, y := 0, 0
+    dirX, dirY := 0, 1
 
     for _, v := range instructions {
         if v == 'G' {
