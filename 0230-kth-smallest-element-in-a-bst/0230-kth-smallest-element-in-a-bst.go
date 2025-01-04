@@ -7,9 +7,9 @@
  * }
  */
 func kthSmallest(root *TreeNode, k int) int {
+    cur := root
     n := 0
     stack := []*TreeNode{}
-    cur := root
 
     for cur != nil || len(stack) > 0 {
         for cur != nil {
@@ -19,6 +19,7 @@ func kthSmallest(root *TreeNode, k int) int {
 
         cur = stack[len(stack)-1]
         stack = stack[:len(stack)-1]
+
         n += 1
         if n == k {
             return cur.Val
