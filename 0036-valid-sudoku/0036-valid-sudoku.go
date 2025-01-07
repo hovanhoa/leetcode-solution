@@ -9,10 +9,11 @@ func isValidSudoku(board [][]byte) bool {
                 continue
             }
 
-            digit := int(cell - '0') - 1
+            digit := cell - '0' - 1
             if cols[i][digit] || rows[j][digit] || squares[i/3][j/3][digit] {
                 return false
             }
+
 
             cols[i][digit] = true
             rows[j][digit] = true
