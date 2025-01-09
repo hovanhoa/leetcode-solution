@@ -6,7 +6,6 @@ func minReorder(n int, connections [][]int) int {
         arr[s] = append(arr[s], -f)
     }
 
-
     ans := 0
     visited := make([]bool, n)
     var dfs func(num int)
@@ -29,10 +28,10 @@ func minReorder(n int, connections [][]int) int {
     return ans
 }
 
-func abs(a int) int {
-    if a < 0 {
-        return -a
+func abs(n int) int {
+    if n < 0 {
+        return -n
     }
 
-    return a
+    return n
 }
