@@ -1,15 +1,14 @@
 func minSwaps(s string) int {
-    close, maxClose := 0, 0
-
+    ans, cur := 0, 0
     for _, v := range s {
-        if v == '[' {
-            close -= 1
+        if v == ']' {
+            cur += 1
         } else {
-            close += 1
+            cur -= 1
         }
 
-        maxClose = max(maxClose, close)
+        ans = max(ans, cur)
     }
 
-    return (maxClose + 1) / 2
+    return (ans + 1)/2
 }
