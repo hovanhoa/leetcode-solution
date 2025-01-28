@@ -1,10 +1,14 @@
 func canJump(nums []int) bool {
-    n := len(nums) - 1
-    for i := n - 1; i >= 0; i-- {
-        if nums[i] + i >= n {
-            n = i
+    cur := 0
+    for i, v := range nums {
+        if cur < i {
+            return false
         }
+
+        if i + v > cur {
+            cur = i + v
+        } 
     }
 
-    return n == 0
+    return cur >= len(nums) - 1
 }
