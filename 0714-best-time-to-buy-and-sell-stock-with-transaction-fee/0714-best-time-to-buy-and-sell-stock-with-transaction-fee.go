@@ -1,11 +1,11 @@
 func maxProfit(prices []int, fee int) int {
-    dp := make([][2]int, len(prices))
-    dp[0][1] = - prices[0]
+    dp1, dp2 := make([]int, len(prices)), make([]int, len(prices))
+    dp2[0] = - prices[0]
 
     for i := 1; i < len(prices); i++ {
-        dp[i][0] = max(dp[i-1][0], prices[i] + dp[i-1][1] - fee)
-        dp[i][1] = max(dp[i-1][1], dp[i-1][0] - prices[i])
+        dp1[i] = max(dp1[i-1], prices[i] + dp2[i-1] - fee)
+        dp2[i] = max(dp2[i-1], dp1[i-1] - prices[i])
     }
 
-    return dp[len(prices) - 1][0]
+    return dp1[len(prices) - 1]
 }
