@@ -51,14 +51,20 @@
 ## Math
 |  |
 | ------- |
+| [0062-unique-paths](https://github.com/hovanhoa/leetcode-solution/tree/master/0062-unique-paths) |
 | [0189-rotate-array](https://github.com/hovanhoa/leetcode-solution/tree/master/0189-rotate-array) |
 ## Dynamic Programming
 |  |
 | ------- |
+| [0062-unique-paths](https://github.com/hovanhoa/leetcode-solution/tree/master/0062-unique-paths) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/hovanhoa/leetcode-solution/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/hovanhoa/leetcode-solution/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 ## Greedy
 |  |
 | ------- |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/hovanhoa/leetcode-solution/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
+## Combinatorics
+|  |
+| ------- |
+| [0062-unique-paths](https://github.com/hovanhoa/leetcode-solution/tree/master/0062-unique-paths) |
 <!---LeetCode Topics End-->
