@@ -14,11 +14,13 @@
 | [0169-majority-element](https://github.com/hovanhoa/leetcode-solution/tree/master/0169-majority-element) |
 | [0189-rotate-array](https://github.com/hovanhoa/leetcode-solution/tree/master/0189-rotate-array) |
 | [0747-min-cost-climbing-stairs](https://github.com/hovanhoa/leetcode-solution/tree/master/0747-min-cost-climbing-stairs) |
+| [1319-unique-number-of-occurrences](https://github.com/hovanhoa/leetcode-solution/tree/master/1319-unique-number-of-occurrences) |
 | [2107-find-unique-binary-string](https://github.com/hovanhoa/leetcode-solution/tree/master/2107-find-unique-binary-string) |
 ## Hash Table
 |  |
 | ------- |
 | [0169-majority-element](https://github.com/hovanhoa/leetcode-solution/tree/master/0169-majority-element) |
+| [1319-unique-number-of-occurrences](https://github.com/hovanhoa/leetcode-solution/tree/master/1319-unique-number-of-occurrences) |
 | [2107-find-unique-binary-string](https://github.com/hovanhoa/leetcode-solution/tree/master/2107-find-unique-binary-string) |
 ## String
 |  |
