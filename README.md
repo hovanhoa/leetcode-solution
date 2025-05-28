@@ -18,6 +18,7 @@
 | [0747-min-cost-climbing-stairs](https://github.com/hovanhoa/leetcode-solution/tree/master/0747-min-cost-climbing-stairs) |
 | [1319-unique-number-of-occurrences](https://github.com/hovanhoa/leetcode-solution/tree/master/1319-unique-number-of-occurrences) |
 | [1392-find-the-difference-of-two-arrays](https://github.com/hovanhoa/leetcode-solution/tree/master/1392-find-the-difference-of-two-arrays) |
+| [1798-max-number-of-k-sum-pairs](https://github.com/hovanhoa/leetcode-solution/tree/master/1798-max-number-of-k-sum-pairs) |
 | [2107-find-unique-binary-string](https://github.com/hovanhoa/leetcode-solution/tree/master/2107-find-unique-binary-string) |
 ## Hash Table
 |  |
@@ -25,6 +26,7 @@
 | [0169-majority-element](https://github.com/hovanhoa/leetcode-solution/tree/master/0169-majority-element) |
 | [1319-unique-number-of-occurrences](https://github.com/hovanhoa/leetcode-solution/tree/master/1319-unique-number-of-occurrences) |
 | [1392-find-the-difference-of-two-arrays](https://github.com/hovanhoa/leetcode-solution/tree/master/1392-find-the-difference-of-two-arrays) |
+| [1798-max-number-of-k-sum-pairs](https://github.com/hovanhoa/leetcode-solution/tree/master/1798-max-number-of-k-sum-pairs) |
 | [2107-find-unique-binary-string](https://github.com/hovanhoa/leetcode-solution/tree/master/2107-find-unique-binary-string) |
 ## String
 |  |
@@ -43,11 +45,13 @@
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/hovanhoa/leetcode-solution/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
 | [0189-rotate-array](https://github.com/hovanhoa/leetcode-solution/tree/master/0189-rotate-array) |
 | [0283-move-zeroes](https://github.com/hovanhoa/leetcode-solution/tree/master/0283-move-zeroes) |
+| [1798-max-number-of-k-sum-pairs](https://github.com/hovanhoa/leetcode-solution/tree/master/1798-max-number-of-k-sum-pairs) |
 ## Sorting
 |  |
 | ------- |
 | [0015-3sum](https://github.com/hovanhoa/leetcode-solution/tree/master/0015-3sum) |
 | [0169-majority-element](https://github.com/hovanhoa/leetcode-solution/tree/master/0169-majority-element) |
+| [1798-max-number-of-k-sum-pairs](https://github.com/hovanhoa/leetcode-solution/tree/master/1798-max-number-of-k-sum-pairs) |
 ## Divide and Conquer
 |  |
 | ------- |
