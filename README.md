@@ -33,6 +33,7 @@
 ## String
 |  |
 | ------- |
+| [0125-valid-palindrome](https://github.com/hovanhoa/leetcode-solution/tree/master/0125-valid-palindrome) |
 | [2107-find-unique-binary-string](https://github.com/hovanhoa/leetcode-solution/tree/master/2107-find-unique-binary-string) |
 ## Backtracking
 |  |
@@ -45,6 +46,7 @@
 | [0026-remove-duplicates-from-sorted-array](https://github.com/hovanhoa/leetcode-solution/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0027-remove-element](https://github.com/hovanhoa/leetcode-solution/tree/master/0027-remove-element) |
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/hovanhoa/leetcode-solution/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
+| [0125-valid-palindrome](https://github.com/hovanhoa/leetcode-solution/tree/master/0125-valid-palindrome) |
 | [0189-rotate-array](https://github.com/hovanhoa/leetcode-solution/tree/master/0189-rotate-array) |
 | [0283-move-zeroes](https://github.com/hovanhoa/leetcode-solution/tree/master/0283-move-zeroes) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/hovanhoa/leetcode-solution/tree/master/1798-max-number-of-k-sum-pairs) |
