@@ -16,6 +16,7 @@
 | [0189-rotate-array](https://github.com/hovanhoa/leetcode-solution/tree/master/0189-rotate-array) |
 | [0238-product-of-array-except-self](https://github.com/hovanhoa/leetcode-solution/tree/master/0238-product-of-array-except-self) |
 | [0283-move-zeroes](https://github.com/hovanhoa/leetcode-solution/tree/master/0283-move-zeroes) |
+| [0739-daily-temperatures](https://github.com/hovanhoa/leetcode-solution/tree/master/0739-daily-temperatures) |
 | [0747-min-cost-climbing-stairs](https://github.com/hovanhoa/leetcode-solution/tree/master/0747-min-cost-climbing-stairs) |
 | [1319-unique-number-of-occurrences](https://github.com/hovanhoa/leetcode-solution/tree/master/1319-unique-number-of-occurrences) |
 | [1392-find-the-difference-of-two-arrays](https://github.com/hovanhoa/leetcode-solution/tree/master/1392-find-the-difference-of-two-arrays) |
@@ -101,4 +102,12 @@
 |  |
 | ------- |
 | [0136-single-number](https://github.com/hovanhoa/leetcode-solution/tree/master/0136-single-number) |
+## Stack
+|  |
+| ------- |
+| [0739-daily-temperatures](https://github.com/hovanhoa/leetcode-solution/tree/master/0739-daily-temperatures) |
+## Monotonic Stack
+|  |
+| ------- |
+| [0739-daily-temperatures](https://github.com/hovanhoa/leetcode-solution/tree/master/0739-daily-temperatures) |
 <!---LeetCode Topics End-->
