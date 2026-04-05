@@ -22,6 +22,7 @@
 | [0303-range-sum-query-immutable](https://github.com/hovanhoa/leetcode-solution/tree/master/0303-range-sum-query-immutable) |
 | [0525-contiguous-array](https://github.com/hovanhoa/leetcode-solution/tree/master/0525-contiguous-array) |
 | [0560-subarray-sum-equals-k](https://github.com/hovanhoa/leetcode-solution/tree/master/0560-subarray-sum-equals-k) |
+| [0643-maximum-average-subarray-i](https://github.com/hovanhoa/leetcode-solution/tree/master/0643-maximum-average-subarray-i) |
 | [0739-daily-temperatures](https://github.com/hovanhoa/leetcode-solution/tree/master/0739-daily-temperatures) |
 | [0747-min-cost-climbing-stairs](https://github.com/hovanhoa/leetcode-solution/tree/master/0747-min-cost-climbing-stairs) |
 | [1319-unique-number-of-occurrences](https://github.com/hovanhoa/leetcode-solution/tree/master/1319-unique-number-of-occurrences) |
@@ -139,4 +140,8 @@
 |  |
 | ------- |
 | [0303-range-sum-query-immutable](https://github.com/hovanhoa/leetcode-solution/tree/master/0303-range-sum-query-immutable) |
+## Sliding Window
+|  |
+| ------- |
+| [0643-maximum-average-subarray-i](https://github.com/hovanhoa/leetcode-solution/tree/master/0643-maximum-average-subarray-i) |
 <!---LeetCode Topics End-->
