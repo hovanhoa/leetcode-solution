@@ -36,6 +36,7 @@
 | [0003-longest-substring-without-repeating-characters](https://github.com/hovanhoa/leetcode-solution/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0141-linked-list-cycle](https://github.com/hovanhoa/leetcode-solution/tree/master/0141-linked-list-cycle) |
 | [0169-majority-element](https://github.com/hovanhoa/leetcode-solution/tree/master/0169-majority-element) |
+| [0202-happy-number](https://github.com/hovanhoa/leetcode-solution/tree/master/0202-happy-number) |
 | [0525-contiguous-array](https://github.com/hovanhoa/leetcode-solution/tree/master/0525-contiguous-array) |
 | [0560-subarray-sum-equals-k](https://github.com/hovanhoa/leetcode-solution/tree/master/0560-subarray-sum-equals-k) |
 | [1319-unique-number-of-occurrences](https://github.com/hovanhoa/leetcode-solution/tree/master/1319-unique-number-of-occurrences) |
@@ -64,6 +65,7 @@
 | [0141-linked-list-cycle](https://github.com/hovanhoa/leetcode-solution/tree/master/0141-linked-list-cycle) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/hovanhoa/leetcode-solution/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0189-rotate-array](https://github.com/hovanhoa/leetcode-solution/tree/master/0189-rotate-array) |
+| [0202-happy-number](https://github.com/hovanhoa/leetcode-solution/tree/master/0202-happy-number) |
 | [0283-move-zeroes](https://github.com/hovanhoa/leetcode-solution/tree/master/0283-move-zeroes) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/hovanhoa/leetcode-solution/tree/master/1798-max-number-of-k-sum-pairs) |
 ## Sorting
@@ -87,6 +89,7 @@
 | [0062-unique-paths](https://github.com/hovanhoa/leetcode-solution/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/hovanhoa/leetcode-solution/tree/master/0070-climbing-stairs) |
 | [0189-rotate-array](https://github.com/hovanhoa/leetcode-solution/tree/master/0189-rotate-array) |
+| [0202-happy-number](https://github.com/hovanhoa/leetcode-solution/tree/master/0202-happy-number) |
 ## Dynamic Programming
 |  |
 | ------- |
