@@ -21,6 +21,7 @@
 | [0283-move-zeroes](https://github.com/hovanhoa/leetcode-solution/tree/master/0283-move-zeroes) |
 | [0287-find-the-duplicate-number](https://github.com/hovanhoa/leetcode-solution/tree/master/0287-find-the-duplicate-number) |
 | [0303-range-sum-query-immutable](https://github.com/hovanhoa/leetcode-solution/tree/master/0303-range-sum-query-immutable) |
+| [0496-next-greater-element-i](https://github.com/hovanhoa/leetcode-solution/tree/master/0496-next-greater-element-i) |
 | [0525-contiguous-array](https://github.com/hovanhoa/leetcode-solution/tree/master/0525-contiguous-array) |
 | [0560-subarray-sum-equals-k](https://github.com/hovanhoa/leetcode-solution/tree/master/0560-subarray-sum-equals-k) |
 | [0643-maximum-average-subarray-i](https://github.com/hovanhoa/leetcode-solution/tree/master/0643-maximum-average-subarray-i) |
@@ -38,6 +39,7 @@
 | [0141-linked-list-cycle](https://github.com/hovanhoa/leetcode-solution/tree/master/0141-linked-list-cycle) |
 | [0169-majority-element](https://github.com/hovanhoa/leetcode-solution/tree/master/0169-majority-element) |
 | [0202-happy-number](https://github.com/hovanhoa/leetcode-solution/tree/master/0202-happy-number) |
+| [0496-next-greater-element-i](https://github.com/hovanhoa/leetcode-solution/tree/master/0496-next-greater-element-i) |
 | [0525-contiguous-array](https://github.com/hovanhoa/leetcode-solution/tree/master/0525-contiguous-array) |
 | [0560-subarray-sum-equals-k](https://github.com/hovanhoa/leetcode-solution/tree/master/0560-subarray-sum-equals-k) |
 | [1319-unique-number-of-occurrences](https://github.com/hovanhoa/leetcode-solution/tree/master/1319-unique-number-of-occurrences) |
@@ -138,10 +140,12 @@
 ## Stack
 |  |
 | ------- |
+| [0496-next-greater-element-i](https://github.com/hovanhoa/leetcode-solution/tree/master/0496-next-greater-element-i) |
 | [0739-daily-temperatures](https://github.com/hovanhoa/leetcode-solution/tree/master/0739-daily-temperatures) |
 ## Monotonic Stack
 |  |
 | ------- |
+| [0496-next-greater-element-i](https://github.com/hovanhoa/leetcode-solution/tree/master/0496-next-greater-element-i) |
 | [0739-daily-temperatures](https://github.com/hovanhoa/leetcode-solution/tree/master/0739-daily-temperatures) |
 ## Memoization
 |  |
