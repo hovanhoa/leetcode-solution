@@ -2,7 +2,7 @@ import "slices"
 
 func threeSum(nums []int) [][]int {
     slices.Sort(nums)
-    ans := [][]int{}
+    res := [][]int{}
 
     for i := 0; i < len(nums) - 2; i++ {
         if i > 0 && nums[i] == nums[i-1] {
@@ -11,20 +11,20 @@ func threeSum(nums []int) [][]int {
 
         l, r := i + 1, len(nums) - 1
         for l < r {
-            total := nums[i] + nums[l] + nums[r]
-            if total < 0 {
+            target := nums[l] + nums[r] + nums[i]
+            if target < 0 {
                 l += 1
-            } else if total > 0 {
+            } else if target > 0 {
                 r -= 1
             } else {
-                ans = append(ans, []int{nums[i], nums[l], nums[r]})
+                res = append(res, []int{nums[i], nums[l], nums[r]})
                 l += 1
-                for nums[l] == nums[l-1] && l <r {
+                for l < r && nums[l] == nums[l-1] {
                     l += 1
                 }
             }
         }
     }
 
-    return ans
+    return res
 }
