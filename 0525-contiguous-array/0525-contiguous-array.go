@@ -1,25 +1,24 @@
 func findMaxLength(nums []int) int {
-    zeros, ones := 0, 0
+    zero, one := 0, 0
     m := map[int]int{}
     res := 0
 
     for i, v := range nums {
         if v == 0 {
-            zeros += 1
+            zero += 1
         } else {
-            ones += 1
+            one += 1
         }
 
-        diff := zeros - ones
+        diff := zero - one
         if _, ok := m[diff]; !ok {
             m[diff] = i
         }
 
-        if zeros == ones {
-            res = zeros + ones
+        if diff == 0 {
+            res = zero + one
         } else {
-            idx := m[diff]
-            res = max(res, i - idx)
+            res = max(res, i - m[diff])
         }
     }
 
