@@ -23,6 +23,7 @@
 | [0283-move-zeroes](https://github.com/hovanhoa/leetcode-solution/tree/master/0283-move-zeroes) |
 | [0287-find-the-duplicate-number](https://github.com/hovanhoa/leetcode-solution/tree/master/0287-find-the-duplicate-number) |
 | [0303-range-sum-query-immutable](https://github.com/hovanhoa/leetcode-solution/tree/master/0303-range-sum-query-immutable) |
+| [0435-non-overlapping-intervals](https://github.com/hovanhoa/leetcode-solution/tree/master/0435-non-overlapping-intervals) |
 | [0496-next-greater-element-i](https://github.com/hovanhoa/leetcode-solution/tree/master/0496-next-greater-element-i) |
 | [0525-contiguous-array](https://github.com/hovanhoa/leetcode-solution/tree/master/0525-contiguous-array) |
 | [0560-subarray-sum-equals-k](https://github.com/hovanhoa/leetcode-solution/tree/master/0560-subarray-sum-equals-k) |
@@ -79,6 +80,7 @@
 | ------- |
 | [0015-3sum](https://github.com/hovanhoa/leetcode-solution/tree/master/0015-3sum) |
 | [0169-majority-element](https://github.com/hovanhoa/leetcode-solution/tree/master/0169-majority-element) |
+| [0435-non-overlapping-intervals](https://github.com/hovanhoa/leetcode-solution/tree/master/0435-non-overlapping-intervals) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/hovanhoa/leetcode-solution/tree/master/1798-max-number-of-k-sum-pairs) |
 ## Divide and Conquer
 |  |
@@ -103,12 +105,14 @@
 | [0070-climbing-stairs](https://github.com/hovanhoa/leetcode-solution/tree/master/0070-climbing-stairs) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/hovanhoa/leetcode-solution/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/hovanhoa/leetcode-solution/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
+| [0435-non-overlapping-intervals](https://github.com/hovanhoa/leetcode-solution/tree/master/0435-non-overlapping-intervals) |
 | [0747-min-cost-climbing-stairs](https://github.com/hovanhoa/leetcode-solution/tree/master/0747-min-cost-climbing-stairs) |
 ## Greedy
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/hovanhoa/leetcode-solution/tree/master/0011-container-with-most-water) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/hovanhoa/leetcode-solution/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
+| [0435-non-overlapping-intervals](https://github.com/hovanhoa/leetcode-solution/tree/master/0435-non-overlapping-intervals) |
 ## Combinatorics
 |  |
 | ------- |
