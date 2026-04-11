@@ -3,8 +3,6 @@ func eraseOverlapIntervals(intervals [][]int) int {
         return intervals[i][1] <= intervals[j][1]
     })
 
-    fmt.Println(intervals)
-
     ans := 1
     cur := intervals[0][1]
     for i := 1; i < len(intervals); i++ {
