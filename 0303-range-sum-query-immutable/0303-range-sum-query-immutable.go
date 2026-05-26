@@ -4,11 +4,9 @@ type NumArray struct {
 
 
 func Constructor(nums []int) NumArray {
-    sumArr := make([]int, len(nums)+1)
-    s := 0
+    sumArr := make([]int, 1)
     for i, v := range nums {
-        s += v
-        sumArr[i+1] = s
+        sumArr = append(sumArr, sumArr[i] + v)
     }
 
     return NumArray{
