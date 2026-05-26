@@ -11,13 +11,14 @@ func Constructor(nums []int) NumArray {
 
 
 func (this *NumArray) SumRange(left int, right int) int {
-    sum := 0
-    for left <= right && right < len(this.nums) {
-        sum += this.nums[left]
-        left += 1
+    sumArr := make([]int, len(this.nums)+1)
+    s := 0
+    for i, v := range this.nums {
+        s += v
+        sumArr[i+1] = s
     }
 
-    return sum
+    return sumArr[right+1] - sumArr[left]
 }
 
 
