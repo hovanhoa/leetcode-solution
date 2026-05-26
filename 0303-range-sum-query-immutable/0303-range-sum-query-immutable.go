@@ -4,21 +4,21 @@ type NumArray struct {
 
 
 func Constructor(nums []int) NumArray {
+    sumArr := make([]int, len(nums)+1)
+    s := 0
+    for i, v := range nums {
+        s += v
+        sumArr[i+1] = s
+    }
+
     return NumArray{
-        nums: nums,
+        nums: sumArr,
     }
 }
 
 
 func (this *NumArray) SumRange(left int, right int) int {
-    sumArr := make([]int, len(this.nums)+1)
-    s := 0
-    for i, v := range this.nums {
-        s += v
-        sumArr[i+1] = s
-    }
-
-    return sumArr[right+1] - sumArr[left]
+    return this.nums[right+1] - this.nums[left]
 }
 
 
