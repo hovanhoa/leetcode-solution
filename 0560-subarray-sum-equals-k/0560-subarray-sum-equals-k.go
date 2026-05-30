@@ -1,15 +1,16 @@
 func subarraySum(nums []int, k int) int {
     m := map[int]int{0: 1}
+    ans := 0
     s := 0
-    res := 0
     for _, v := range nums {
         s += v
-        if _, ok := m[s-k]; ok {
-            res += m[s-k]
+        diff := s - k
+        if cnt, ok := m[diff]; ok {
+            ans += cnt
         }
 
         m[s] += 1
     }
 
-    return res
+    return ans
 }
