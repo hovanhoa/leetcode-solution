@@ -2,29 +2,32 @@ import "slices"
 
 func threeSum(nums []int) [][]int {
     slices.Sort(nums)
-    res := [][]int{}
-
-    for i := 0; i < len(nums) - 2; i++ {
-        if i > 0 && nums[i] == nums[i-1] {
-            continue
+    ans := [][]int{}
+    i := 0
+    fmt.Println(nums)
+    for i <= len(nums) - 3 {
+        left, right := i + 1, len(nums) - 1
+        for left < right {
+            s := nums[i] + nums[left] + nums[right]
+            if s == 0 {
+                fmt.Println(i, left, right)
+                ans = append(ans, []int{nums[i], nums[left], nums[right]})
+                left += 1
+                for nums[left] == nums[left-1] && left < right {
+                    left += 1
+                }
+            } else if s < 0 {
+                left += 1
+            } else {
+                right -= 1
+            }
         }
 
-        l, r := i + 1, len(nums) - 1
-        for l < r {
-            target := nums[l] + nums[r] + nums[i]
-            if target < 0 {
-                l += 1
-            } else if target > 0 {
-                r -= 1
-            } else {
-                res = append(res, []int{nums[i], nums[l], nums[r]})
-                l += 1
-                for l < r && nums[l] == nums[l-1] {
-                    l += 1
-                }
-            }
+        i += 1
+        for i <= len(nums) - 3 && nums[i] == nums[i-1] { 
+            i += 1
         }
     }
 
-    return res
+    return ans
 }
