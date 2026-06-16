@@ -1,20 +1,17 @@
 func mergeAlternately(word1 string, word2 string) string {
-    ans := make([]byte, len(word1) + len(word2))
-    count := 0
+    ans := []byte{}
     i, j := 0, 0
     for i < len(word1) || j < len(word2) {
         if i < len(word1) {
-            ans[count] = word1[i]
-            i++
-            count++
+            ans = append(ans, word1[i])
+            i += 1
         }
 
         if j < len(word2) {
-            ans[count] = word2[j]
-            j++
-            count++
+            ans = append(ans, word2[j])
+            j += 1
         }
-    }
+    }    
 
     return string(ans)
 }
