@@ -58,6 +58,7 @@
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/hovanhoa/leetcode-solution/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0125-valid-palindrome](https://github.com/hovanhoa/leetcode-solution/tree/master/0125-valid-palindrome) |
+| [1768-merge-strings-alternately](https://github.com/hovanhoa/leetcode-solution/tree/master/1768-merge-strings-alternately) |
 | [2107-find-unique-binary-string](https://github.com/hovanhoa/leetcode-solution/tree/master/2107-find-unique-binary-string) |
 ## Backtracking
 |  |
@@ -78,6 +79,7 @@
 | [0202-happy-number](https://github.com/hovanhoa/leetcode-solution/tree/master/0202-happy-number) |
 | [0283-move-zeroes](https://github.com/hovanhoa/leetcode-solution/tree/master/0283-move-zeroes) |
 | [0287-find-the-duplicate-number](https://github.com/hovanhoa/leetcode-solution/tree/master/0287-find-the-duplicate-number) |
+| [1768-merge-strings-alternately](https://github.com/hovanhoa/leetcode-solution/tree/master/1768-merge-strings-alternately) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/hovanhoa/leetcode-solution/tree/master/1798-max-number-of-k-sum-pairs) |
 ## Sorting
 |  |
