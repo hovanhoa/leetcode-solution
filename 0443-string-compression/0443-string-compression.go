@@ -1,21 +1,23 @@
+import "strconv"
+
 func compress(chars []byte) int {
-    l, r := 0, 0
+    w := 0
+    r := 0
     for r < len(chars) {
-        j := r + 1
-        for ;j < len(chars) && chars[j] == chars[j-1]; j++ {}
+        c, cnt := chars[r], 0
+        for r < len(chars) && c == chars[r] {
+            r += 1
+            cnt += 1
+        }
 
-        chars[l] = chars[r]
-        l++
-        if j != r + 1 {
-            for _, v := range strconv.Itoa(j-r) {
-                chars[l] = byte(v)
-                l++
+        chars[w] = c
+        w += 1
+        if cnt > 1 {
+            for _, d := range strconv.Itoa(cnt) {
+                chars[w] = byte(d)
+                w += 1
             }
-        } 
-
-        r = j
+        }
     }
-
-    chars = chars[:l]
-    return len(chars)
+    return w
 }
