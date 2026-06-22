@@ -5,6 +5,7 @@ func canPlaceFlowers(flowerbed []int, n int) bool {
             n -= 1
         }
     }
+    
 
     return n <= 0
 }
