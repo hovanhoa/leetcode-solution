@@ -1,35 +1,29 @@
 func reverseVowels(s string) string {
-    vowels := map[byte]bool{
-        'a': true,
-        'e': true,
-        'i': true,
-        'o': true,
-        'u': true,
-        'A': true,
-        'E': true,
-        'I': true,
-        'O': true,
-        'U': true,
-    }
-
+    l, r := 0, len(s) - 1 
     ans := []byte(s)
-    l, r := 0, len(ans) - 1
     for l < r {
-        for !vowels[ans[l]] && l < r {
-            l++
+        for l < r && !isVowel(ans[l]) {
+            l += 1
         }
 
-        for !vowels[ans[r]] && l < r {
-            r--
+        for l < r && !isVowel(ans[r]) {
+            r -= 1
         }
 
-        if l < r {
-            ans[l], ans[r] = ans[r], ans[l]
-        }
-
-        l++
-        r--
+        ans[l], ans[r] = ans[r], ans[l]
+        l, r = l + 1, r - 1
     }
 
     return string(ans)
+}
+
+func isVowel(s byte) bool {
+    vowels := []byte{'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'}
+    for _, v := range vowels {
+        if s == v {
+            return true
+        }
+    }
+
+    return false
 }
