@@ -1,11 +1,9 @@
 func largestAltitude(gain []int) int {
     ans := 0
-    road := 0
+    cur := 0
     for _, v := range gain {
-        road += v
-        if ans < road {
-            ans = road
-        }
+        cur += v
+        ans = max(ans, cur)
     }
 
     return ans
