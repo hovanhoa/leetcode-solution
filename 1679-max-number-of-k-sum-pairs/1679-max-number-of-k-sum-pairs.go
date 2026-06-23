@@ -1,14 +1,14 @@
 func maxOperations(nums []int, k int) int {
-    kMap := map[int]int{}
-    count := 0
+    ans := 0
+    m := map[int]int{}
     for _, v := range nums {
-        if kMap[k-v] > 0 {
-            count++
-            kMap[k-v]--
+        if m[k-v] > 0 {
+            ans += 1
+            m[k-v] -= 1
         } else {
-            kMap[v]++
+            m[v] += 1
         }
     }
 
-    return count
+    return ans
 }
