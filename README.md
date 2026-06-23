@@ -33,6 +33,7 @@
 | [0643-maximum-average-subarray-i](https://github.com/hovanhoa/leetcode-solution/tree/master/0643-maximum-average-subarray-i) |
 | [0739-daily-temperatures](https://github.com/hovanhoa/leetcode-solution/tree/master/0739-daily-temperatures) |
 | [0747-min-cost-climbing-stairs](https://github.com/hovanhoa/leetcode-solution/tree/master/0747-min-cost-climbing-stairs) |
+| [1004-max-consecutive-ones-iii](https://github.com/hovanhoa/leetcode-solution/tree/master/1004-max-consecutive-ones-iii) |
 | [1319-unique-number-of-occurrences](https://github.com/hovanhoa/leetcode-solution/tree/master/1319-unique-number-of-occurrences) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/hovanhoa/leetcode-solution/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 | [1392-find-the-difference-of-two-arrays](https://github.com/hovanhoa/leetcode-solution/tree/master/1392-find-the-difference-of-two-arrays) |
@@ -152,6 +153,7 @@
 | [0303-range-sum-query-immutable](https://github.com/hovanhoa/leetcode-solution/tree/master/0303-range-sum-query-immutable) |
 | [0525-contiguous-array](https://github.com/hovanhoa/leetcode-solution/tree/master/0525-contiguous-array) |
 | [0560-subarray-sum-equals-k](https://github.com/hovanhoa/leetcode-solution/tree/master/0560-subarray-sum-equals-k) |
+| [1004-max-consecutive-ones-iii](https://github.com/hovanhoa/leetcode-solution/tree/master/1004-max-consecutive-ones-iii) |
 ## Tree
 |  |
 | ------- |
@@ -162,6 +164,7 @@
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/hovanhoa/leetcode-solution/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0287-find-the-duplicate-number](https://github.com/hovanhoa/leetcode-solution/tree/master/0287-find-the-duplicate-number) |
 | [0783-search-in-a-binary-search-tree](https://github.com/hovanhoa/leetcode-solution/tree/master/0783-search-in-a-binary-search-tree) |
+| [1004-max-consecutive-ones-iii](https://github.com/hovanhoa/leetcode-solution/tree/master/1004-max-consecutive-ones-iii) |
 ## Binary Tree
 |  |
 | ------- |
@@ -196,6 +199,7 @@
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/hovanhoa/leetcode-solution/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0643-maximum-average-subarray-i](https://github.com/hovanhoa/leetcode-solution/tree/master/0643-maximum-average-subarray-i) |
+| [1004-max-consecutive-ones-iii](https://github.com/hovanhoa/leetcode-solution/tree/master/1004-max-consecutive-ones-iii) |
 | [1456-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/hovanhoa/leetcode-solution/tree/master/1456-maximum-number-of-vowels-in-a-substring-of-given-length) |
 ## Linked List
 |  |
