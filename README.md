@@ -31,6 +31,7 @@
 | [0560-subarray-sum-equals-k](https://github.com/hovanhoa/leetcode-solution/tree/master/0560-subarray-sum-equals-k) |
 | [0605-can-place-flowers](https://github.com/hovanhoa/leetcode-solution/tree/master/0605-can-place-flowers) |
 | [0643-maximum-average-subarray-i](https://github.com/hovanhoa/leetcode-solution/tree/master/0643-maximum-average-subarray-i) |
+| [0724-find-pivot-index](https://github.com/hovanhoa/leetcode-solution/tree/master/0724-find-pivot-index) |
 | [0739-daily-temperatures](https://github.com/hovanhoa/leetcode-solution/tree/master/0739-daily-temperatures) |
 | [0747-min-cost-climbing-stairs](https://github.com/hovanhoa/leetcode-solution/tree/master/0747-min-cost-climbing-stairs) |
 | [1004-max-consecutive-ones-iii](https://github.com/hovanhoa/leetcode-solution/tree/master/1004-max-consecutive-ones-iii) |
@@ -156,6 +157,7 @@
 | [0303-range-sum-query-immutable](https://github.com/hovanhoa/leetcode-solution/tree/master/0303-range-sum-query-immutable) |
 | [0525-contiguous-array](https://github.com/hovanhoa/leetcode-solution/tree/master/0525-contiguous-array) |
 | [0560-subarray-sum-equals-k](https://github.com/hovanhoa/leetcode-solution/tree/master/0560-subarray-sum-equals-k) |
+| [0724-find-pivot-index](https://github.com/hovanhoa/leetcode-solution/tree/master/0724-find-pivot-index) |
 | [1004-max-consecutive-ones-iii](https://github.com/hovanhoa/leetcode-solution/tree/master/1004-max-consecutive-ones-iii) |
 | [1732-find-the-highest-altitude](https://github.com/hovanhoa/leetcode-solution/tree/master/1732-find-the-highest-altitude) |
 ## Tree
