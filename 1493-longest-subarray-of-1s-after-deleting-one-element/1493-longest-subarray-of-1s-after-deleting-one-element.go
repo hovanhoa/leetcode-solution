@@ -1,22 +1,26 @@
 func longestSubarray(nums []int) int {
-    l, k := 0, 0
+    return longestOnes(nums, 1) - 1
+}
+
+func longestOnes(nums []int, k int) int {
     ans := 0
-    for r := 0; r < len(nums); r++ {
+    l, r := 0, 0
+    cnt := 0
+    for r < len(nums) {
         if nums[r] == 0 {
-            k++
-        }
+            cnt += 1
+            for cnt > k {
+                if nums[l] == 0 {
+                    cnt -= 1
+                }
 
-        for k > 1 {
-            if nums[l] == 0 {
-                k--
+                l += 1
             }
-
-            l++
         }
 
-        if r - l > ans {
-            ans = r - l
-        }
+        r += 1
+
+        ans = max(ans, r - l)
     }
 
     return ans
