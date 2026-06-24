@@ -35,6 +35,7 @@
 | [0739-daily-temperatures](https://github.com/hovanhoa/leetcode-solution/tree/master/0739-daily-temperatures) |
 | [0747-min-cost-climbing-stairs](https://github.com/hovanhoa/leetcode-solution/tree/master/0747-min-cost-climbing-stairs) |
 | [1004-max-consecutive-ones-iii](https://github.com/hovanhoa/leetcode-solution/tree/master/1004-max-consecutive-ones-iii) |
+| [1207-unique-number-of-occurrences](https://github.com/hovanhoa/leetcode-solution/tree/master/1207-unique-number-of-occurrences) |
 | [1319-unique-number-of-occurrences](https://github.com/hovanhoa/leetcode-solution/tree/master/1319-unique-number-of-occurrences) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/hovanhoa/leetcode-solution/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 | [1392-find-the-difference-of-two-arrays](https://github.com/hovanhoa/leetcode-solution/tree/master/1392-find-the-difference-of-two-arrays) |
@@ -57,6 +58,7 @@
 | [0496-next-greater-element-i](https://github.com/hovanhoa/leetcode-solution/tree/master/0496-next-greater-element-i) |
 | [0525-contiguous-array](https://github.com/hovanhoa/leetcode-solution/tree/master/0525-contiguous-array) |
 | [0560-subarray-sum-equals-k](https://github.com/hovanhoa/leetcode-solution/tree/master/0560-subarray-sum-equals-k) |
+| [1207-unique-number-of-occurrences](https://github.com/hovanhoa/leetcode-solution/tree/master/1207-unique-number-of-occurrences) |
 | [1319-unique-number-of-occurrences](https://github.com/hovanhoa/leetcode-solution/tree/master/1319-unique-number-of-occurrences) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/hovanhoa/leetcode-solution/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 | [1392-find-the-difference-of-two-arrays](https://github.com/hovanhoa/leetcode-solution/tree/master/1392-find-the-difference-of-two-arrays) |
