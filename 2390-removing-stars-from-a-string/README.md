@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/removing-stars-from-a-string">2390. Removing Stars From a String</a></h2><h3>Medium</h3><hr><p>You are given a string <code>s</code>, which contains stars <code>*</code>.</p>
+<h2><a href="https://leetcode.com/problems/removing-stars-from-a-string">2470. Removing Stars From a String</a></h2><h3>Medium</h3><hr><p>You are given a string <code>s</code>, which contains stars <code>*</code>.</p>
 
 <p>In one operation, you can:</p>
 
