@@ -83,6 +83,7 @@
 | [1657-determine-if-two-strings-are-close](https://github.com/hovanhoa/leetcode-solution/tree/master/1657-determine-if-two-strings-are-close) |
 | [1768-merge-strings-alternately](https://github.com/hovanhoa/leetcode-solution/tree/master/1768-merge-strings-alternately) |
 | [2107-find-unique-binary-string](https://github.com/hovanhoa/leetcode-solution/tree/master/2107-find-unique-binary-string) |
+| [2390-removing-stars-from-a-string](https://github.com/hovanhoa/leetcode-solution/tree/master/2390-removing-stars-from-a-string) |
 ## Backtracking
 |  |
 | ------- |
@@ -196,6 +197,7 @@
 | [0084-largest-rectangle-in-histogram](https://github.com/hovanhoa/leetcode-solution/tree/master/0084-largest-rectangle-in-histogram) |
 | [0496-next-greater-element-i](https://github.com/hovanhoa/leetcode-solution/tree/master/0496-next-greater-element-i) |
 | [0739-daily-temperatures](https://github.com/hovanhoa/leetcode-solution/tree/master/0739-daily-temperatures) |
+| [2390-removing-stars-from-a-string](https://github.com/hovanhoa/leetcode-solution/tree/master/2390-removing-stars-from-a-string) |
 ## Monotonic Stack
 |  |
 | ------- |
@@ -240,4 +242,5 @@
 |  |
 | ------- |
 | [2352-equal-row-and-column-pairs](https://github.com/hovanhoa/leetcode-solution/tree/master/2352-equal-row-and-column-pairs) |
+| [2390-removing-stars-from-a-string](https://github.com/hovanhoa/leetcode-solution/tree/master/2390-removing-stars-from-a-string) |
 <!---LeetCode Topics End-->
