@@ -1,23 +1,21 @@
 func equalPairs(grid [][]int) int {
     n := len(grid)
-    m := make(map[[200]int]int)
-    arr := [200]int{}
+
+    rows := make(map[string]int)
     for i := 0; i < n; i++ {
-        copy(arr[:], grid[i])
-        m[arr]++
+        key := fmt.Sprint(grid[i])
+        rows[key]++
     }
 
-    res := 0
-    for i := 0; i < n; i++ {
-        arr := [200]int{}
-        for j := 0; j < n; j++ {
-            arr[j] = grid[j][i]
+    ans := 0
+    for j := 0; j < n; j++ {
+        col := make([]int, n)
+        for i := 0; i < n; i++ {
+            col[i] = grid[i][j]
         }
 
-        if v, ok := m[arr]; ok {
-            res += v
-        }
+        ans += rows[fmt.Sprint(col)]
     }
 
-    return res
+    return ans
 }
