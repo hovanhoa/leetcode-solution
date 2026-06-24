@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/equal-row-and-column-pairs/?envType=study-plan-v2&envId=leetcode-75">2352. Equal Row and Column Pairs</a></h2><h3>Medium</h3><hr><p>Given a <strong>0-indexed</strong> <code>n x n</code> integer matrix <code>grid</code>, <em>return the number of pairs </em><code>(r<sub>i</sub>, c<sub>j</sub>)</code><em> such that row </em><code>r<sub>i</sub></code><em> and column </em><code>c<sub>j</sub></code><em> are equal</em>.</p>
+<h2><a href="https://leetcode.com/problems/equal-row-and-column-pairs">2428. Equal Row and Column Pairs</a></h2><h3>Medium</h3><hr><p>Given a <strong>0-indexed</strong> <code>n x n</code> integer matrix <code>grid</code>, <em>return the number of pairs </em><code>(r<sub>i</sub>, c<sub>j</sub>)</code><em> such that row </em><code>r<sub>i</sub></code><em> and column </em><code>c<sub>j</sub></code><em> are equal</em>.</p>
 
 <p>A row and column pair is considered equal if they contain the same elements in the same order (i.e., an equal array).</p>
 
