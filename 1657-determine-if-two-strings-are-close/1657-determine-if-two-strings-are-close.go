@@ -1,43 +1,32 @@
 func closeStrings(word1 string, word2 string) bool {
     if len(word1) != len(word2) {
         return false
-    }    
-
-    m1, m2 := map[byte]int{}, map[byte]int{}
-    for _, v := range word1 {
-        m1[byte(v)] += 1
     }
 
-    for _, v := range word2 {
-        m2[byte(v)] += 1
+    mWord1, mWord2 := map[byte]int{}, map[byte]int{}
+    for i := 0; i < len(word1); i++ {
+        mWord1[word1[i]]++
+        mWord2[word2[i]]++
     }
 
-    fmt.Println(m1)
-    fmt.Println(m2)
-
-    return isSameMap(m1, m2) && isSameMap(m2, m1)
-}
-
-func isSameMap(m1, m2 map[byte]int) bool {
-    if len(m1) != len(m2) {
-        return false
+    // compare value
+    vWord1 := map[int]int{}
+    kWord1 := map[byte]bool{}
+    for k, v := range mWord1 {
+        vWord1[v]++
+        kWord1[k] = true
     }
 
-    reverseMap := map[int]int{}
-    for _, v := range m2 {
-        reverseMap[v] += 1
-    }
-
-    for k, v := range m1 {
-        if _, ok := m2[k]; !ok {
+    for k, v := range mWord2 {
+        if vWord1[v] == 0 {
             return false
         }
 
-        if reverseMap[v] > 0 {
-            reverseMap[v] -= 1
-        } else {
+        if !kWord1[k] {
             return false
         }
+
+        vWord1[v]--
     }
 
     return true
