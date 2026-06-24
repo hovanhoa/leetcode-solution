@@ -1,27 +1,30 @@
 func findDifference(nums1 []int, nums2 []int) [][]int {
-    s1Map := make(map[int]bool)
-    s2Map := make(map[int]bool)
-
+    m1, m2 := map[int]bool{}, map[int]bool{}
     for _, v := range nums1 {
-        s1Map[v] = true
+        m1[v] = true
     }
 
     for _, v := range nums2 {
-        s2Map[v] = true
+        m2[v] = true
     }
 
-    res := make([][]int, 2)
-    for k := range s1Map {
-        if !s2Map[k] {
-            res[0] = append(res[0], k)
+    ans1 := []int{}
+    for _, v := range nums1 {
+        if !m2[v] {
+            ans1 = append(ans1, v)
         }
-    }
 
-    for k := range s2Map {
-        if !s1Map[k] {
-            res[1] = append(res[1], k)
+        m2[v] = true
+    }
+    
+    ans2 := []int{}
+    for _, v := range nums2 {
+        if !m1[v] {
+            ans2 = append(ans2, v)
         }
+
+        m1[v] = true
     }
 
-    return res
+    return [][]int{ans1, ans2}
 }
