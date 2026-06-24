@@ -1,25 +1,26 @@
 type RecentCounter struct {
-    ping []int
+    q []int
 }
 
 
 func Constructor() RecentCounter {
-    return RecentCounter{}
+    return RecentCounter{
+        q: []int{},
+    }
 }
 
 
 func (this *RecentCounter) Ping(t int) int {
-    ans := 1
-    for i := len(this.ping) - 1; i >= 0; i-- {
-        if this.ping[i] >= t - 3000 {
-            ans++
-        } else {
-            break
+    cnt := 0
+    for _, v := range this.q {
+        if v >= t - 3000 && v <= t {
+            cnt += 1
         }
     }
 
-    this.ping = append(this.ping, t)
-    return ans
+    this.q = append(this.q, t)
+
+    return cnt + 1
 }
 
 
