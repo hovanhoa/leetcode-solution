@@ -44,6 +44,7 @@
 | [1732-find-the-highest-altitude](https://github.com/hovanhoa/leetcode-solution/tree/master/1732-find-the-highest-altitude) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/hovanhoa/leetcode-solution/tree/master/1798-max-number-of-k-sum-pairs) |
 | [2107-find-unique-binary-string](https://github.com/hovanhoa/leetcode-solution/tree/master/2107-find-unique-binary-string) |
+| [2215-find-the-difference-of-two-arrays](https://github.com/hovanhoa/leetcode-solution/tree/master/2215-find-the-difference-of-two-arrays) |
 ## Hash Table
 |  |
 | ------- |
@@ -62,6 +63,7 @@
 | [1679-max-number-of-k-sum-pairs](https://github.com/hovanhoa/leetcode-solution/tree/master/1679-max-number-of-k-sum-pairs) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/hovanhoa/leetcode-solution/tree/master/1798-max-number-of-k-sum-pairs) |
 | [2107-find-unique-binary-string](https://github.com/hovanhoa/leetcode-solution/tree/master/2107-find-unique-binary-string) |
+| [2215-find-the-difference-of-two-arrays](https://github.com/hovanhoa/leetcode-solution/tree/master/2215-find-the-difference-of-two-arrays) |
 ## String
 |  |
 | ------- |
