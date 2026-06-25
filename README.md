@@ -113,6 +113,7 @@
 | [1679-max-number-of-k-sum-pairs](https://github.com/hovanhoa/leetcode-solution/tree/master/1679-max-number-of-k-sum-pairs) |
 | [1768-merge-strings-alternately](https://github.com/hovanhoa/leetcode-solution/tree/master/1768-merge-strings-alternately) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/hovanhoa/leetcode-solution/tree/master/1798-max-number-of-k-sum-pairs) |
+| [2095-delete-the-middle-node-of-a-linked-list](https://github.com/hovanhoa/leetcode-solution/tree/master/2095-delete-the-middle-node-of-a-linked-list) |
 ## Sorting
 |  |
 | ------- |
@@ -233,6 +234,7 @@
 | [0092-reverse-linked-list-ii](https://github.com/hovanhoa/leetcode-solution/tree/master/0092-reverse-linked-list-ii) |
 | [0141-linked-list-cycle](https://github.com/hovanhoa/leetcode-solution/tree/master/0141-linked-list-cycle) |
 | [0206-reverse-linked-list](https://github.com/hovanhoa/leetcode-solution/tree/master/0206-reverse-linked-list) |
+| [2095-delete-the-middle-node-of-a-linked-list](https://github.com/hovanhoa/leetcode-solution/tree/master/2095-delete-the-middle-node-of-a-linked-list) |
 ## Recursion
 |  |
 | ------- |
