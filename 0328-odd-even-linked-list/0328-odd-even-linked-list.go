@@ -6,24 +6,27 @@
  * }
  */
 func oddEvenList(head *ListNode) *ListNode {
-    if head == nil || head.Next == nil {
-        return head
+    left, right := &ListNode{
+        Next: head,
+    }, &ListNode{
+        Next: head,
     }
-
-    oddHead, oddTail := head, head
-    evenHead, evenTail := head.Next, head.Next
-    for oddTail != nil && evenTail != nil {
-
-        oddTail.Next = evenTail.Next
-        if oddTail.Next != nil {
-            oddTail = oddTail.Next
+    curLeft, curRight := left, right
+    cnt := 0
+    for head != nil {
+        cnt += 1
+        if cnt%2 == 1 {
+            curLeft.Next = head
+            curLeft = curLeft.Next
+        } else {
+            curRight.Next = head
+            curRight = curRight.Next
         }
 
-        evenTail.Next = oddTail.Next
-        evenTail = evenTail.Next
-    }    
+        head = head.Next
+    }
 
-    oddTail.Next = evenHead
-
-    return oddHead
+    curRight.Next = nil
+    curLeft.Next = right.Next
+    return left.Next
 }
