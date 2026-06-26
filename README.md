@@ -234,6 +234,7 @@
 | [0092-reverse-linked-list-ii](https://github.com/hovanhoa/leetcode-solution/tree/master/0092-reverse-linked-list-ii) |
 | [0141-linked-list-cycle](https://github.com/hovanhoa/leetcode-solution/tree/master/0141-linked-list-cycle) |
 | [0206-reverse-linked-list](https://github.com/hovanhoa/leetcode-solution/tree/master/0206-reverse-linked-list) |
+| [0328-odd-even-linked-list](https://github.com/hovanhoa/leetcode-solution/tree/master/0328-odd-even-linked-list) |
 | [2095-delete-the-middle-node-of-a-linked-list](https://github.com/hovanhoa/leetcode-solution/tree/master/2095-delete-the-middle-node-of-a-linked-list) |
 ## Recursion
 |  |
