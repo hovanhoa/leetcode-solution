@@ -142,6 +142,7 @@
 | [0189-rotate-array](https://github.com/hovanhoa/leetcode-solution/tree/master/0189-rotate-array) |
 | [0202-happy-number](https://github.com/hovanhoa/leetcode-solution/tree/master/0202-happy-number) |
 | [1071-greatest-common-divisor-of-strings](https://github.com/hovanhoa/leetcode-solution/tree/master/1071-greatest-common-divisor-of-strings) |
+| [1137-n-th-tribonacci-number](https://github.com/hovanhoa/leetcode-solution/tree/master/1137-n-th-tribonacci-number) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -152,6 +153,7 @@
 | [0392-is-subsequence](https://github.com/hovanhoa/leetcode-solution/tree/master/0392-is-subsequence) |
 | [0435-non-overlapping-intervals](https://github.com/hovanhoa/leetcode-solution/tree/master/0435-non-overlapping-intervals) |
 | [0747-min-cost-climbing-stairs](https://github.com/hovanhoa/leetcode-solution/tree/master/0747-min-cost-climbing-stairs) |
+| [1137-n-th-tribonacci-number](https://github.com/hovanhoa/leetcode-solution/tree/master/1137-n-th-tribonacci-number) |
 | [1493-longest-subarray-of-1s-after-deleting-one-element](https://github.com/hovanhoa/leetcode-solution/tree/master/1493-longest-subarray-of-1s-after-deleting-one-element) |
 ## Greedy
 |  |
@@ -219,6 +221,7 @@
 |  |
 | ------- |
 | [0070-climbing-stairs](https://github.com/hovanhoa/leetcode-solution/tree/master/0070-climbing-stairs) |
+| [1137-n-th-tribonacci-number](https://github.com/hovanhoa/leetcode-solution/tree/master/1137-n-th-tribonacci-number) |
 ## Design
 |  |
 | ------- |
