@@ -7,9 +7,9 @@
  * }
  */
 func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
-    if root == nil || root == q || root == p {
+    if root == nil || root == p || root == q {
         return root
-    }
+    }   
 
     l := lowestCommonAncestor(root.Left, p, q)
     r := lowestCommonAncestor(root.Right, p, q)
