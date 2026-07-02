@@ -1,14 +1,22 @@
 func rob(nums []int) int {
-    dp := make([]int, len(nums))
-    dp[0] = nums[0]
-    
-    for i := 1; i < len(nums); i++ {
-        if i == 1 {
-            dp[i] = max(nums[1], dp[0])
-        } else {
-            dp[i] = max(dp[i-1], dp[i-2] + nums[i])
-        }
+    if len(nums) == 1 {
+        return nums[0]
     }
 
-    return dp[len(dp)-1]
+    if len(nums) == 2 {
+        return max(nums[0], nums[1])
+    }
+
+    for i := range nums {
+        if i < 2 {
+            continue
+        } else if i == 2 {
+            nums[i] = nums[i] + nums[i-2]
+            continue
+        }
+
+        nums[i] += max(nums[i-2], nums[i-3])
+    }
+
+    return max(nums[len(nums)-1], nums[len(nums)-2])
 }
