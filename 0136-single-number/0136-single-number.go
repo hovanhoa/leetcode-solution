@@ -1,8 +1,8 @@
 func singleNumber(nums []int) int {
-    ans := 0
-    for _, v := range nums {
-        ans ^= v
+    n := nums[0]
+    for i := 1; i < len(nums); i++ {
+        n ^= nums[i]
     }
 
-    return ans
+    return n
 }
