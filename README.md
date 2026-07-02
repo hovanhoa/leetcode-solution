@@ -34,6 +34,7 @@
 | [0724-find-pivot-index](https://github.com/hovanhoa/leetcode-solution/tree/master/0724-find-pivot-index) |
 | [0735-asteroid-collision](https://github.com/hovanhoa/leetcode-solution/tree/master/0735-asteroid-collision) |
 | [0739-daily-temperatures](https://github.com/hovanhoa/leetcode-solution/tree/master/0739-daily-temperatures) |
+| [0746-min-cost-climbing-stairs](https://github.com/hovanhoa/leetcode-solution/tree/master/0746-min-cost-climbing-stairs) |
 | [0747-min-cost-climbing-stairs](https://github.com/hovanhoa/leetcode-solution/tree/master/0747-min-cost-climbing-stairs) |
 | [1004-max-consecutive-ones-iii](https://github.com/hovanhoa/leetcode-solution/tree/master/1004-max-consecutive-ones-iii) |
 | [1207-unique-number-of-occurrences](https://github.com/hovanhoa/leetcode-solution/tree/master/1207-unique-number-of-occurrences) |
@@ -152,6 +153,7 @@
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/hovanhoa/leetcode-solution/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0392-is-subsequence](https://github.com/hovanhoa/leetcode-solution/tree/master/0392-is-subsequence) |
 | [0435-non-overlapping-intervals](https://github.com/hovanhoa/leetcode-solution/tree/master/0435-non-overlapping-intervals) |
+| [0746-min-cost-climbing-stairs](https://github.com/hovanhoa/leetcode-solution/tree/master/0746-min-cost-climbing-stairs) |
 | [0747-min-cost-climbing-stairs](https://github.com/hovanhoa/leetcode-solution/tree/master/0747-min-cost-climbing-stairs) |
 | [1137-n-th-tribonacci-number](https://github.com/hovanhoa/leetcode-solution/tree/master/1137-n-th-tribonacci-number) |
 | [1493-longest-subarray-of-1s-after-deleting-one-element](https://github.com/hovanhoa/leetcode-solution/tree/master/1493-longest-subarray-of-1s-after-deleting-one-element) |
