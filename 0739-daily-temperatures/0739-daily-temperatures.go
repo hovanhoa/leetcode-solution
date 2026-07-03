@@ -1,14 +1,14 @@
 func dailyTemperatures(temperatures []int) []int {
     stack := []int{}
-    res := make([]int, len(temperatures))
+    ans := make([]int, len(temperatures))
     for i, v := range temperatures {
         for len(stack) > 0 && v > temperatures[stack[len(stack)-1]] {
-            res[stack[len(stack)-1]] = i - stack[len(stack)-1]
+            ans[stack[len(stack)-1]] = i - stack[len(stack)-1]
             stack = stack[:len(stack)-1]
         }
 
         stack = append(stack, i)
     }
-
-    return res
+    
+    return ans   
 }
