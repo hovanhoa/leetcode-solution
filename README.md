@@ -15,6 +15,7 @@
 | [0084-largest-rectangle-in-histogram](https://github.com/hovanhoa/leetcode-solution/tree/master/0084-largest-rectangle-in-histogram) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/hovanhoa/leetcode-solution/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/hovanhoa/leetcode-solution/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
+| [0128-longest-consecutive-sequence](https://github.com/hovanhoa/leetcode-solution/tree/master/0128-longest-consecutive-sequence) |
 | [0136-single-number](https://github.com/hovanhoa/leetcode-solution/tree/master/0136-single-number) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/hovanhoa/leetcode-solution/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0169-majority-element](https://github.com/hovanhoa/leetcode-solution/tree/master/0169-majority-element) |
@@ -58,6 +59,7 @@
 | ------- |
 | [0001-two-sum](https://github.com/hovanhoa/leetcode-solution/tree/master/0001-two-sum) |
 | [0003-longest-substring-without-repeating-characters](https://github.com/hovanhoa/leetcode-solution/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0128-longest-consecutive-sequence](https://github.com/hovanhoa/leetcode-solution/tree/master/0128-longest-consecutive-sequence) |
 | [0141-linked-list-cycle](https://github.com/hovanhoa/leetcode-solution/tree/master/0141-linked-list-cycle) |
 | [0169-majority-element](https://github.com/hovanhoa/leetcode-solution/tree/master/0169-majority-element) |
 | [0202-happy-number](https://github.com/hovanhoa/leetcode-solution/tree/master/0202-happy-number) |
@@ -314,4 +316,8 @@
 | ------- |
 | [0104-maximum-depth-of-binary-tree](https://github.com/hovanhoa/leetcode-solution/tree/master/0104-maximum-depth-of-binary-tree) |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/hovanhoa/leetcode-solution/tree/master/1448-count-good-nodes-in-binary-tree) |
+## Union-Find
+|  |
+| ------- |
+| [0128-longest-consecutive-sequence](https://github.com/hovanhoa/leetcode-solution/tree/master/0128-longest-consecutive-sequence) |
 <!---LeetCode Topics End-->
