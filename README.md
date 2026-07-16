@@ -65,6 +65,7 @@
 | [0496-next-greater-element-i](https://github.com/hovanhoa/leetcode-solution/tree/master/0496-next-greater-element-i) |
 | [0525-contiguous-array](https://github.com/hovanhoa/leetcode-solution/tree/master/0525-contiguous-array) |
 | [0560-subarray-sum-equals-k](https://github.com/hovanhoa/leetcode-solution/tree/master/0560-subarray-sum-equals-k) |
+| [0771-jewels-and-stones](https://github.com/hovanhoa/leetcode-solution/tree/master/0771-jewels-and-stones) |
 | [1207-unique-number-of-occurrences](https://github.com/hovanhoa/leetcode-solution/tree/master/1207-unique-number-of-occurrences) |
 | [1319-unique-number-of-occurrences](https://github.com/hovanhoa/leetcode-solution/tree/master/1319-unique-number-of-occurrences) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/hovanhoa/leetcode-solution/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
@@ -86,6 +87,7 @@
 | [0394-decode-string](https://github.com/hovanhoa/leetcode-solution/tree/master/0394-decode-string) |
 | [0443-string-compression](https://github.com/hovanhoa/leetcode-solution/tree/master/0443-string-compression) |
 | [0649-dota2-senate](https://github.com/hovanhoa/leetcode-solution/tree/master/0649-dota2-senate) |
+| [0771-jewels-and-stones](https://github.com/hovanhoa/leetcode-solution/tree/master/0771-jewels-and-stones) |
 | [1071-greatest-common-divisor-of-strings](https://github.com/hovanhoa/leetcode-solution/tree/master/1071-greatest-common-divisor-of-strings) |
 | [1143-longest-common-subsequence](https://github.com/hovanhoa/leetcode-solution/tree/master/1143-longest-common-subsequence) |
 | [1456-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/hovanhoa/leetcode-solution/tree/master/1456-maximum-number-of-vowels-in-a-substring-of-given-length) |
